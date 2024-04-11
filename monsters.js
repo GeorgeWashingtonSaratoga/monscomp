@@ -143,122 +143,122 @@ const monsters = [
     {
         name: "Quibble",
         elements: "Air, Water",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Cold, Air, Water, Oasis, Shugabush, Tribal, Colossingum, Composer, Gold",
+        likes: "Mammott, Scups, Fossil-osaurus, Trumplite, Castanevine"
     },
     {
         name: "Cybop",
         elements: "Air, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Air, Water, Earth, Haven, Tribal, Colossingum, Composer, Gold",
+        likes: "Tweedle, Cozee Cabin, Toob, Razzli Tree"
     },
     {
         name: "Glowl",
         elements: "Air, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Haven, Oasis, Amber",
+        likes: "Dandidoo, Sneyser, Ziggurab, Rootitoot, Drummidary, Dragon Tower, Smunkin Patch, Tree Hut"
     },
     {
         name: "Fwog",
         elements: "Water, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Plant, Air, Water, Bone, Tribal, Colossingum, Composer, Gold",
+        likes: "Mammott, Oaktopus, PomPom, Banjaw, Reflecting Pool, Fire Bush, Spurrit Statue"
     },
     {
         name: "Phangler",
         elements: "Water, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Oasis, Psychic, Bone, Amber",
+        likes: "Congle, Potbelly, Thrumble, Ziggurab, Sooza, Krillby, Candelavra, Leafy Sea Dragon, Squeed Statue, Bass String Bass"
     },
     {
         name: "Poppette",
         elements: "Water, Psychic",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Psychic, Nexus",
+        likes: "Periscorp, Mountain Morsel, Yum Yum Tree, Barbloo Statue"
     },
     {
         name: "Denchuhs",
         elements: "Water, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Bone, Nexus",
+        likes: "Plinkajou, Fuzzle Tree, Jarhead, Saggle Tree"
     },
     {
         name: "Stogg",
         elements: "Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Haven, Faerie, Bone, Amber",
+        likes: "Tring, Mammott, Withur, Yelmut, Drummidary, Gnarls, Stritch Skin, Digger, Eerie Remains"
     },
     {
         name: "HippityHop",
         elements: "Earth, Faerie",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Faerie, Nexus",
+        likes: "Ziggurab, Bottomless Pit, Fossil-osaurus, Jarhead"
     },
     {
         name: "Peckidna",
         elements: "Earth, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Bone, Nexus",
+        likes: "Hawlo, Toob, Mountain Morsel, Barbloo Statue"
     },
     {
         name: "Pluckbill",
         elements: "Fire, Light",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Light, Nexus",
+        likes: "Mammott, Mountain Morsel, Harpsitree, Saggle Tree"
     },
     {
         name: "Yuggler",
         elements: "Fire, Psychic",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Psychic, Nexus",
+        likes: "Bonkers, Floofy Nest, Wubbox Stockpile, Digger"
     },
     {
         name: "Wimmzies",
         elements: "Fire, Faerie",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Faerie, Nexus",
+        likes: "Kayna, Jarhead, Leafy Sea Dragon, Cozee Cabin"
     },
     {
         name: "Hawlo",
         elements: "Fire, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Bone, Nexus",
+        likes: "Noggin, Piney Tree, Thumpies Totem, Flappy Flag"
     },
     {
         name: "Cahoot",
         elements: "Light, Psychic",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Sanctum",
+        likes: "Mushaboom, Thumpies Totem, Digger, Spurrit Statue"
     },
     {
         name: "Knucklehead",
         elements: "Light, Faerie",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Sanctum",
+        likes: "Floot Fly, Piney Tree, Thumpies Totem, Dragoon Statue"
     },
     {
         name: "Roarick",
         elements: "Light, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Sanctum",
+        likes: "Enchantling, Wubbox Stockpile, Puffle Tree, Leafy Sea Dragon"
     },
     {
         name: "Déjà-Jin",
         elements: "Psychic, Faerie",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Sanctum",
+        likes: "Larvaluss, Mountain Morsel, Bottomless Pit, Reflecting Pool"
     },
     {
         name: "Xyster",
         elements: "Psychic, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Sanctum",
+        likes: "Clackula, Eerie Remains, Jarhead, Guitree"
     },
     {
         name: "Osstax",
         elements: "Faerie, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Sanctum",
+        likes: "G'day, Thumpies Totem, Wild Bagpipe, Hollow Log"
     },
     {
         name: "Thumpies",
