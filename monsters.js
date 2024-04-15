@@ -263,374 +263,374 @@ const monsters = [
     {
         name: "Thumpies",
         elements: "Plant, Cold, Air",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Cold, Earth, Tribal, Colossingum, Composer, Gold",
+        likes: "Furcorn, Oaktopus, Cozee Cabin, Fuzzle Tree, Dragoon Statue"
     },
     {
         name: "Bowgart",
         elements: "Plant, Cold, Water",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Plant, Cold, Tribal, Colossingum, Composer, Gold",
+        likes: "Shrubb, Tweedle, Travelers' Sign, Toob, Eerie Remains"
     },
     {
         name: "Clamble",
         elements: "Plant, Cold, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Plant, Earth, Tribal, Colossingum, Composer, Gold",
+        likes: "Oaktopus, Pango, Digger, Toob, Barbloo Statue"
     },
     {
         name: "Spunge",
         elements: "Plant, Air, Water",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Cold, Water, Tribal, Colossingum, Composer, Gold",
+        likes: "Dandidoo, Stritch Skin, Barbloo Statue, Bloofi Tree"
     },
     {
         name: "Reedling",
         elements: "Plant, Air, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Water, Earth, Tribal, Colossingum, Composer, Gold",
+        likes: "Potbelly, Shrubb, Beeyoot Tree, Pipes of Cicado, Squeed Statue"
     },
     {
         name: "Pummel",
         elements: "Plant, Water, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Plant, Water, Tribal, Colossingum, Composer, Gold",
+        likes: "Toe Jammer, Maw, Fossil-osaurus, Flappy Flag, Fuzzle Tree"
     },
     {
         name: "Congle",
         elements: "Cold, Air, Water",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Cold, Air, Tribal, Colossingum, Composer, Gold",
+        likes: "Potbelly, T-Rox, Boskus, Fossil-osaurus, Guitree, Meldablend"
     },
     {
         name: "PomPom",
         elements: "Cold, Air, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Air, Earth, Shugabush, Tribal, Colossingum, Composer, Gold",
+        likes: "Fwog, Dandidoo, Shugarock, Directions to Nowhere, Bottomless Pit, Toob"
     },
     {
         name: "T-Rox",
         elements: "Cold, Water, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Plant, Air, Tribal, Colossingum, Composer, Gold",
+        likes: "Potbelly, Congle, Piney Tree, Bloofi Tree, Dragoon Statue"
     },
     {
         name: "Scups",
         elements: "Air, Water, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Air, Water, Tribal, Colossingum, Composer, Gold",
+        likes: "Quibble, Harpsitree, Castanevine, Dragon Tower"
     },
     {
         name: "Sooza",
         elements: "Plant, Cold, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Light, Amber",
+        likes: "Fiddlement, Flum Ox, Krillby, Rootitoot, Tuskski, Toob, Trumblite, Reflecting Pool"
     },
     {
         name: "Barrb",
         elements: "Plant, Air, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Haven, Amber",
+        likes: "Flowah, Boskus, Sneyser, Gnarls, Barbloo Statue, Crumpler Tree, Puffle Tree"
     },
     {
         name: "Rootitoot",
         elements: "Plant, Water, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Psychic, Amber",
+        likes: "Kayna, Floogull, Ziggurab, Krillby, Babayag Tower, Toob, Piney Tree"
     },
     {
-        name: "Reptallio",
+        name: "Repatillo",
         elements: "Plant, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Haven, Amber",
+        likes: "Kayna, Thrumble, PongPing, Tiawa, Castanevine, Dragon Tower, Leafy Sea Dragon"
     },
     {
         name: "Woolabee",
         elements: "Cold, Air, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Oasis, Amber",
+        likes: "Toe Jammer, Stogg, Rootitoot, Bisonorus, Gnarls, Eerie Remains, Spurrit Statue, Fuzzle Tree"
     },
     {
         name: "Wynq",
         elements: "Cold, Water, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Oasis, Amber",
+        likes: "Tweedle, Krillby, Barrb, Candelavra, Rootitoot, Ambered Thing, Piney Tree, Bloofi Tree"
     },
     {
         name: "Ziggurab",
         elements: "Cold, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Faerie, Amber",
+        likes: "HippityHop, Glowl, Candelavra, Wynq, Bisonorus, Yum Yum Tree, Hollow Log, Tree Forte Tower"
     },
     {
         name: "Whaddle",
         elements: "Air, Water, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Oasis, Amber",
+        likes: "Kayna, Sooza, Barrb, Bowhead, Beeyoot Tree, Yum Yum Tree, Cozee Cabin"
     },
     {
         name: "Floogull",
         elements: "Air, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Haven, Amber",
+        likes: "Repatillo, Yelmut, Thrumble, Incisaur, Tree Forte Tower, Bloofi Tree, Fossil-osaurus"
     },
     {
         name: "Thrumble",
         elements: "Water, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Bone, Amber",
+        likes: "Phangler, Sooza, Bisonorus, Gnarls, Tub Fountain, Bottomless Pit, Dragon Tower"
     },
     {
         name: "Spytrap",
         elements: "Plant, Cold, Light",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Light, Nexus",
+        likes: "Potbelly, Squeed Statue, Inverdigus Fern, Castanevine"
     },
     {
         name: "TooToo",
         elements: "Plant, Fire, Light",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Light, Nexus",
+        likes: "Bulbo, Babayag Tower, Wubbox Stockpile, Fire Bush"
     },
     {
         name: "Fiddlement",
         elements: "Cold, Fire, Light",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Light, Nexus",
+        likes: "Sooza, Jarhead, Travelers' Sign, Piney Tree"
     },
     {
         name: "Tapricorn",
         elements: "Plant, Water, Psychic",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Psychic, Nexus",
+        likes: "Theremind, Castanevine, Thumpies Totem, Guitree"
     },
     {
         name: "Rooba",
         elements: "Plant, Fire, Psychic",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Psychic, Nexus",
+        likes: "Gloptic, Inverdigus Fern, Puffle Tree, Crumpler Tree"
     },
     {
         name: "Periscorp",
         elements: "Water, Fire, Psychic",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Psychic, Nexus",
+        likes: "Poppette, Inverdigus Fern, Dragon Tower, Pipes of Cicado"
     },
     {
         name: "Cantorell",
         elements: "Cold, Earth, Faerie",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Faerie, Nexus",
+        likes: "Squot, Tree Hut, Inverdigus Fern"
     },
     {
         name: "Bridg-it",
         elements: "Earth, Fire, Faerie",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Faerie, Nexus",
+        likes: "Boskus, Mountain Morsel, Harpsitree, Ambered Thing"
     },
     {
         name: "Clavi Gnat",
         elements: "Cold, Fire, Faerie",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Faerie, Nexus",
+        likes: "Floot Fly, Pipes of Cicado, Inverdigus Fern, Dragon Tower"
     },
     {
         name: "Withur",
         elements: "Earth, Water, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Bone, Nexus",
+        likes: "Stogg, Fossil-osaurus, Mountain Morsel, Eerie Remains"
     },
     {
         name: "Uuduk",
         elements: "Eartb, Fire, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Bone, Nexus",
+        likes: "Toe Jammer, Pipes of Cicado, Wubbox Stockpile, Babayag Tower"
     },
     {
         name: "Banjaw",
         elements: "Water, Fire, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Bone, Nexus",
+        likes: "Fwog, Harpsitree, Inverdigus Fern, Meldablend"
     },
     {
         name: "G'day",
         elements: "Light, Psychic, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Sanctum",
+        likes: "Osstax, Mountain Morsel, Thumpies TOtem, Inverdigus Fern"
     },
     {
         name: "Larvaluss",
         elements: "Psychic, Faerie, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Sanctum",
+        likes: "Déjà-Jin, Harpsitree, Jarhead, Barbloo Statue"
     },
     {
         name: "Frondley",
         elements: "Light, Psychic, Faerie",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Sanctum",
+        likes: "Theremind, Beeyoot Tree, Mountain Morsel, Saggle Tree"
     },
     {
         name: "Mushaboom",
         elements: "Light, Faerie, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Sanctum",
+        likes: "Cahoot, Inverdigus Fern, Smunkin Patch, Crumpler Tree"
     },
     {
         name: "Entbrat",
         elements: "Plant, Cold, Water, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Plant, Tribal, Colossingum, Composer, Gold",
+        likes: "Mammott, Flappy Flag, Guitree, Babayag Tower, "
     },
     {
         name: "Deedge",
         elements: "Plant, Cold, Air, Water",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Cold, Shugabush, Tribal, Colossingum, Composer, Gold",
+        likes: "Shugabuzz, Leafy Sea Dragon, Zuffle Tree, Piney Tree, Squeed Statue"
     },
     {
         name: "Riff",
         elements: "Cold, Air, Water, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Air, Tribal, Colossingum, Composer, Gold",
+        likes: "Toe Jammer, Bass String Bridge, Leafy Sea Dragon, Crumpler Tree"
     },
     {
         name: "Shellbeat",
         elements: "Plant, Air, Water, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Water, Tribal, Colossingum, Composer, Gold",
+        likes: "Noggin, Yum YUm Tree, Puffle Tree, Dragon Tower"
     },
     {
         name: "Quarrister",
         elements: "Plant, Cold, Air, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Earth, Tribal, Colossingum, Composer, Gold",
+        likes: "Mammott, Tree Hut, Bass String Bridge, Zuffle Tree"
     },
     {
         name: "Yelmut",
         elements: "Plant, Cold, Air, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Light, Amber",
+        likes: "Flowah, Phangler, Stogg, Tring, Mount Knottshurr, Bingo Bango Bongos, The Thunker"
     },
     {
         name: "Incisaur",
         elements: "Plant, Cold, Water, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Bone, Amber",
+        likes: "Clackula, Floogull, Boskus, Edamimi, PongPing, Cold Globe, Thumpies Totem\, Too, Star Rocks"
     },
     {
         name: "Tiawa",
         elements: "Plant, Air, Water, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Light, Amber",
+        likes: "Flowah, Whaddle, Woolabee, Gnarls, Cold Globe, Swurlee Tree, Spatial Sapling"
     },
     {
         name: "PongPing",
         elements: "Plant, Cold, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Faerie, Amber",
+        likes: "Boskus, Repatillo, Woolabee, Gnarls, Sweetstreamz Tree, Elmenco Stump, Bingo Bango Bongos"
     },
     {
         name: "Edamimi",
         elements: "Plant, Water, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Psychic, Amber",
+        likes: "Periscorp, Glowl, Whaddle, Tiawa, Tuskski, Mount Knottshurr, Ockulo Tree, Swurlee Tree"
     },
     {
         name: "Bisonorus",
         elements: "Plant, Air, Water, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Psychic, Amber",
+        likes: "Tapricorn, Sooza, Thrumble, Krillby, Gnarls, Givutawai Tree, Star Rocks, Innertuba"
     },
     {
         name: "Tring",
         elements: "Plant, Air, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Haven, Amber",
+        likes: "Stogg, Sneyser, Incisaur, Drummidary, Ambered Thing, Babayag Tower, Flappy Flag"
     },
     {
         name: "Sneyser",
         elements: "Cold, Air, Water, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Oasis, Amber",
+        likes: "Glowl, Sooza, Barrb, Tuskski, Fire Bush, Tub Fountain, Toob"
     },
     {
         name: "Krillby",
         elements: "Cold, Air, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Faerie, Amber",
+        likes: "Ziggurab, Phangler, Thrumble, Bisnorus, Striking Bulbs, Hammock, Boss Monument"
     },
     {
         name: "Flum Ox",
         elements: "Air, Water, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Bone, Amber",
+        likes: "Kayna, Whaddle, Sneyser, Wynq, PU System, Freed Thing, Givutawai Tree"
     },
     {
         name: "B'lowt",
         elements: "Plant, Cold, Fire, Light",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Light, Nexus",
+        likes: "Gob, Cozee Cabin, Barbloo Statue, Wubbox Stockpile"
     },
     {
         name: "Gloptic",
         elements: "Plant, Water, Fire, Psychic",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Psychic, Nexus",
+        likes: "Tapricorn, Jarhead, Harpsitree, Travelers' Sign"
     },
     {
         name: "Pladdie",
         elements: "Cold, Earth, Fire, Faerie",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Faerie, Nexus",
+        likes: "Wimmzies, Wild Bagpipe, Wubbox Stockpile, Pipes of Cicado"
     },
     {
         name: "Plinkajou",
         elements: "Water, Earth, Fire, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Bone, Nexus",
+        likes: "Clackula, Jarhead, Bloofi Tree, Tree Hut"
     },
     {
         name: "Enchantling",
         elements: "Light, Psychic, Faerie, Bone",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Sanctum",
+        likes: "Roarick, Dragon Tower, Mountain Morsel, Ambered Thing"
     },
     {
         name: "Mimic",
         elements: "Plant, Cold, Air, Water, Earth",
-        island: "Gold",
-        likes: "TEMP"
+        island: "???",
+        likes: "???"
     },
     {
         name: "Bowhead",
         elements: "Plant, Cold, Air, Water, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Psychic, Amber",
+        likes: "Gloptic, Flum Ox, Stogg, Woolabee, Drummidary, Thumpies Totem, Spatial Sapling, Cold Globe"
     },
     {
         name: "Drummidary",
         elements: "Plant, Cold, Air, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Light, Amber",
+        likes: "Blow't, Phangler, Ziggurab, Thrumble, Tuskski, Bingo Bango Bongos, Smunkit, Sweetstreamz Tree"
     },
     {
         name: "Gnarls",
         elements: "Plant, Cold, Water, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Bone, Amber",
+        likes: "Kayna, Glowl, Tiawa, Tring, Ockulo Tree, Hammock, Striking Bulbs"
     },
     {
         name: "Candelavra",
         elements: "Plant, Air, Water, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Haven, Amber",
+        likes: "Repatillo, Boskus, Wynq, Bowhead, Smunkit, Freed Thing, The Thunker"
     },
     {
         name: "Tusksi",
         elements: "Cold, Air, Water, Earth, Fire",
-        island: "Gold",
-        likes: "TEMP"
+        island: "Faerie, Amber",
+        likes: "Krillby, Flowah, Candelavra, Incisaur, Star Rocks, Cold Globe, Swurlee Tree"
     }
 ];
 
