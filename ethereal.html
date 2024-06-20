@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Singing Monsters Monster Compendium</title>
+    <link href = "flux.css", rel = "stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>My Singing Monsters Ethereal Monster Compendium</h1>
+        
+        <div class="filter">
+            <label>Filter by Element:</label><br>
+            <label><input type="checkbox" class="element-filter" value="Plasma"> Plasma</label>
+            <label><input type="checkbox" class="element-filter" value="Shadow"> Shadow</label>
+            <label><input type="checkbox" class="element-filter" value="Mech"> Mech</label>
+            <label><input type="checkbox" class="element-filter" value="Crystal"> Crystal</label>
+            <label><input type="checkbox" class="element-filter" value="Poison"> Poison</label>
+        </div>
+        
+        <label for="num-elements-filter">Filter by Number of Elements:</label>
+        <select id="num-elements-filter">
+            <option value="">Any</option>
+            <option value="=">Equal to</option>
+            <option value="<">Less than</option>
+            <option value=">">Greater than</option>
+        </select>
+       
+        <select id="num-elements-value">
+            <option value="1">Single</option>
+            <option value="2">Double</option>
+            <option value="3">Triple</option>
+            <option value="4">Quad</option>
+            <option value="5">Quint</option>
+        </select>
+
+        <br>
+
+        <label for="islandFilter">Island:</label>
+        <select id="islandFilter">
+            <option value="Any">Any</option>
+            <option value="Plant">Plant Island</option>
+            <option value="Cold">Cold Island</option>
+            <option value="Air">Air Island</option>
+            <option value="Water">Water Island</option>
+            <option value="Earth">Earth Island</option>
+            <option value="Ethereal">Ethereal Island</option>
+            <option value="Workshop">Ethereal Workshop</option>
+            <option value="Colossingum">The Colossingum</option>
+            <option value="Composer">Composer Island</option>
+        </select>
+
+        <div id="monster-cards-container"></div>
+    </div>
+        <div id="no-results-message" style="display: none;">No monsters match the search criteria.</div>
+    </div>
+
+    <script src="ethMonsters.js"></script>
+    <script src="ethereal.js"></script>
+</body>
+</html>

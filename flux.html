@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Singing Monsters Monster Compendium</title>
+    <link href = "flux.css", rel = "stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>My Singing Monsters Flex Monster Compendium</h1>
+        
+        <div class="filter">
+            <label>Filter by Element:</label><br>
+            <label><input type="checkbox" class="element-filter" value="Plant"> Plant</label>
+            <label><input type="checkbox" class="element-filter" value="Cold"> Cold</label>
+            <label><input type="checkbox" class="element-filter" value="Air"> Air</label>
+            <label><input type="checkbox" class="element-filter" value="Water"> Water</label>
+            <label><input type="checkbox" class="element-filter" value="Earth"> Earth</label>
+            <label><input type="checkbox" class="element-filter" value="Fire"> Fire</label>
+            <label><input type="checkbox" class="element-filter" value="Light"> Light</label>
+            <label><input type="checkbox" class="element-filter" value="Psychic"> Psychic</label>
+            <label><input type="checkbox" class="element-filter" value="Faerie"> Faerie</label>
+            <label><input type="checkbox" class="element-filter" value="Bone"> Bone</label>
+        </div>
+        
+        <label for="num-elements-filter">Filter by Number of Elements:</label>
+        <select id="num-elements-filter">
+            <option value="">Any</option>
+            <option value="=">Equal to</option>
+            <option value="<">Less than</option>
+            <option value=">">Greater than</option>
+        </select>
+       
+        <select id="num-elements-value">
+            <option value="1">Single</option>
+            <option value="2">Double</option>
+            <option value="3">Triple</option>
+            <option value="4">Quad</option>
+            <option value="5">Quint</option>
+            <option value="6">Sext</option>
+            <option value="7">Sept</option>
+            <option value="8">Oct</option>
+            <option value="9">Nov</option>
+            <option value="10">Deca</option>
+        </select>
+
+        <br>
+
+        <div class="filter">
+            <label><input type="checkbox" id="theory-filter"> Include Theoretical Monsters?</label>
+        </div>
+
+        <br>
+
+        <label for="islandFilter">Island:</label>
+        <select id="islandFilter">
+            <option value="Any">Any</option>
+            <option value="Plant">Plant Island</option>
+            <option value="Cold">Cold Island</option>
+            <option value="Air">Air Island</option>
+            <option value="Water">Water Island</option>
+            <option value="Earth">Earth Island</option>
+            <option value="Shugabush">Shugabush Island</option>
+            <option value="Colossingum">The Colossingum</option>
+            <option value="Gold">Gold Island</option>
+            <option value="Haven">Fire Haven</option>
+            <option value="Oasis">Fire Oasis</option>
+            <option value="Light">Light Island</option>
+            <option value="Psychic">Psychic Island</option>
+            <option value="Faerie">Faerie Island</option>
+            <option value="Bone">Bone Island</option>
+            <option value="Sanctum">Magical Sanctum</option>
+            <option value="Nexus">Magical Nexus</option>
+            <option value="Amber">Amber Island</option>
+            <option value="Tribal">Tribal Island</option>
+            <option value="Composer">Composer Island</option>
+            <option value="???">Theoretical Island</option>
+        </select>
+
+        <div id="monster-cards-container"></div>
+    </div>
+        <div id="no-results-message" style="display: none;">No monsters match the search criteria.</div>
+    </div>
+
+    <script src="monsters.js"></script>
+    <script src="flux.js"></script>
+</body>
+</html>
