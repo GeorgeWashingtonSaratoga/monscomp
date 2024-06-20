@@ -210,7 +210,7 @@ const monsters = [
         likes: "PLACEHOLDER"
     },
     {
-        name: "Whaill",
+        name: "???",
         image: "",
         elements: "Plasma, Shadow, Mech, Crystal, Poison",
         island: "Workshop",
