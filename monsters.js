@@ -599,8 +599,8 @@ const monsters = [
     {
         name: "Mimic",
         elements: "Plant, Cold, Air, Water, Earth",
-        island: "???",
-        likes: "???"
+        island: "Oasis",
+        likes: "Gobbleygoud, Smunkit, Spurrit Statue, Mountain Morsel"
     },
     {
         name: "Bowhead",
