@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Singing Monsters Monster Compendium</title>
+    <link href = "flux.css", rel = "stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>My Singing Monsters Monster Compendium: Keybovore Tome</h1>
+
+        <a href = "index.html">Index Page</a>
+
+        <div class="filter">
+            <label>Filter by Element:</label><br>
+            <label><input type="checkbox" class="element-filter" value="Spooktacle"> Spooktacle</label>
+            <label><input type="checkbox" class="element-filter" value="Festival of Yay"> Festival of Yay</label>
+            <label><input type="checkbox" class="element-filter" value="Season of Love"> Season of Love</label>
+            <label><input type="checkbox" class="element-filter" value="Eggs-Travaganza"> Eggs-Travaganza</label>
+            <label><input type="checkbox" class="element-filter" value="SummerSong"> SummerSong</label>
+            <label><input type="checkbox" class="element-filter" value="Feast-Ember"> Feast-Ember</label>
+            <label><input type="checkbox" class="element-filter" value="Anniversary Month"> Anniversary Month</label>
+            <label><input type="checkbox" class="element-filter" value="Beat Hereafter"> Beat Hereafter</label>
+            <label><input type="checkbox" class="element-filter" value="Crescendo Moon"> Crescendo Moon</label>
+            <label><input type="checkbox" class="element-filter" value="Cloverspell"> Cloverspell</label>
+            <label><input type="checkbox" class="element-filter" value="Echoes of Eco"> Echoes of Eco</label>
+            <label><input type="checkbox" class="element-filter" value="Perplexplore"> Perplexplore</label>
+            <label><input type="checkbox" class="element-filter" value="Life-Formula"> Life-Formula</label>
+            <label><input type="checkbox" class="element-filter" value="SkyPainting"> SkyPainting</label>
+            <label><input type="checkbox" class="element-filter" value="MindBoggle"> MindBoggle</label>
+        </div>
+
+        <br>
+
+        <label for="islandFilter">Island:</label>
+        <select id="islandFilter">
+            <option value="Any">Any</option>
+            <option value="Plant">Plant Island</option>
+            <option value="Cold">Cold Island</option>
+            <option value="Air">Air Island</option>
+            <option value="Water">Water Island</option>
+            <option value="Earth">Earth Island</option>
+            <option value="Shugabush">Shugabush Island</option>
+            <option value="Colossingum">The Colossingum</option>
+            <option value="Gold">Gold Island</option>
+            <option value="Ethereal">Ethereal Island</option> 
+            <option value="Haven">Fire Haven</option>
+            <option value="Oasis">Fire Oasis</option>
+            <option value="Light">Light Island</option>
+            <option value="Psychic">Psychic Island</option>
+            <option value="Faerie">Faerie Island</option>
+            <option value="Bone">Bone Island</option>
+            <option value="Sanctum">Magical Sanctum</option>
+            <option value="Shanty">Seasonal Shanty</option>
+            <option value="Amber">Amber Island</option>
+            <option value="Wublin">Wublin Island</option>
+        </select>
+
+        <div id="monster-cards-container"></div>
+    </div>
+        <div id="no-results-message" style="display: none;">No monsters match the search criteria.</div>
+    </div>
+
+    <script src="seaMonsters.js"></script>
+    <script src="seasonal.js"></script>
+</body>
+</html>
