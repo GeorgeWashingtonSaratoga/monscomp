@@ -14,7 +14,7 @@ const monsters = [
         likes: "PLACEHOLDER"
     },
     {
-        name: "Smoochle",
+        name: "Schmoochle",
         image: "",
         elements: "Season of Love",
         island: "Air, Shanty, Colossingum, Gold",
