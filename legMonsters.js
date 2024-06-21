@@ -10,7 +10,7 @@ const monsters = [
         name: "Parlsona",
         image: "",
         elements: "Legendary",
-        island: "Plant, Air, Warer",
+        island: "Plant, Air, Water",
         likes: "PLACEHOLDER"
     },
     {
