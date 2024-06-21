@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     elementFilters.forEach(filter => filter.addEventListener('change', applyFilters));
-    theoryFilter.addEventListener('change', applyFilters);
     islandFilter.addEventListener('change', applyFilters);
 
     // Initial filter application
