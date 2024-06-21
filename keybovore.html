@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Singing Monsters Monster Compendium</title>
+    <link href = "flux.css", rel = "stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>My Singing Monsters Monster Compendium: Keybovore Tome</h1>
+
+        <a href = "index.html">Index Page</a>
+
+        <div class="filter">
+            <label>Filter by Element:</label><br>
+            <label><input type="checkbox" class="element-filter" value="Celestial"> Celestial</label>
+            <label><input type="checkbox" class="element-filter" value="Supernatural"> Supernatural</label>
+            <label><input type="checkbox" class="element-filter" value="Dipster"> Dipster</label>
+        </div>
+
+        <br>
+
+        <label for="islandFilter">Island:</label>
+        <select id="islandFilter">
+            <option value="Any">Any</option>
+            <option value="Plant">Plant Island</option>
+            <option value="Cold">Cold Island</option>
+            <option value="Air">Air Island</option>
+            <option value="Water">Water Island</option>
+            <option value="Earth">Earth Island</option>
+            <option value="Ethereal">Ethereal Island</option> 
+            <option value="Haven">Fire Haven</option>
+            <option value="Oasis">Fire Oasis</option>
+            <option value="Light">Light Island</option>
+            <option value="Psychic">Psychic Island</option>
+            <option value="Faerie">Faerie Island</option>
+            <option value="Bone">Bone Island</option>
+            <option value="Sanctum">Magical Sanctum</option>
+            <option value="Wublin">Wublin Island</option>
+            <option value="Celestial">Celestial Island</option>
+        </select>
+
+        <div id="monster-cards-container"></div>
+    </div>
+        <div id="no-results-message" style="display: none;">No monsters match the search criteria.</div>
+    </div>
+
+    <script src="keyMonsters.js"></script>
+    <script src="keybovores.js"></script>
+</body>
+</html>

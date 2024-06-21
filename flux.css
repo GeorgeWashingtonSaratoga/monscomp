@@ -1,8 +1,9 @@
-.body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    text-align: center;
 }
 .container {
     max-width: 800px;
@@ -36,7 +37,7 @@ h1 {
 .monster-info {
     font-size: 16px;
 }
-.filter {
+filter {
     margin-bottom: 20px;
 }
 .form-section {
@@ -73,6 +74,14 @@ h1 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 a {
+    text-align: left;
+    color: #45a049 
+}
+.TOC {
+    border: 1px solid #ccc;
     text-align: center;
-    color: rgb(15, 131, 48);
+    color: #45a049;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
 }

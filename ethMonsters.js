@@ -42,7 +42,7 @@ const monsters = [
         likes: "PLACEHOLDER"
     },
     {
-        name: "Neoblob",
+        name: "Nebulob",
         image: "",
         elements: "Plasma, Mech",
         island: "Ethereal, Colossingum",
