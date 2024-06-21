@@ -1,7 +1,7 @@
 const monsters = [
     {
         name: "Potbelly",
-        image: "https://static.wikia.nocookie.net/mysingingmonsters/images/e/e0/Potbelly.png/revision/latest/scale-to-width/360?cb=20230517222122",
+        image: "test.png",
         elements: "Plant",
         island: "Plant, Cold, Water, Earth, Haven, Light, Psychic, Shugabush, Tribal, Colossingum, Composer, Gold ",
         likes: "T-Rox, Congle, Reedling, Phangler, Spytrap, Shugarock, Eerie Remains, Wild Bagpipe, Bloofi Tree"
