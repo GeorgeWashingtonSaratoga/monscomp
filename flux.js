@@ -95,35 +95,22 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 monsterClass = "Natural";
             }
+            monstImg = String("./monstImage/" + monster.name.toLowerCase() + ".png")
             const newMonsterCard = document.createElement('div');
             newMonsterCard.classList.add('monster-card');
             newMonsterCard.setAttribute('data-elements', monster.elements);
             newMonsterCard.setAttribute('data-num-elements', monster.elements.split(',').length); // Count number of elements
-            if (monster.name.includes("Potbelly") {
-                newMonsterCard.innerHTML = `
-                    <h2 class="monster-name">${monster.name}</h2>
-                    <div class="monster-info">
-                        <p><strong>Species:</strong> ${monster.name}</p>
-                        <p><strong>Class:</strong> ${monsterClass}</p>
-                        <p><strong>Elements:</strong> ${monster.elements}</p>
-                        <p><strong>Islands:</strong> ${monster.island}</p>
-                        <p><strong>Likes:</strong> ${monster.likes}</p>
-                        <img src=${monster.image}, alt=${monster.name}>
-                    </div>
-                    `; 
-            } else {
-                 newMonsterCard.innerHTML = `
-                    <h2 class="monster-name">${monster.name}</h2>
-                    <div class="monster-info">
-                        <p><strong>Species:</strong> ${monster.name}</p>
-                        <p><strong>Class:</strong> ${monsterClass}</p>
-                        <p><strong>Elements:</strong> ${monster.elements}</p>
-                        <p><strong>Islands:</strong> ${monster.island}</p>
-                        <p><strong>Likes:</strong> ${monster.likes}</p>
-                        <img src=${monster.image}, alt=${monster.name}>
-                    </div>
-                    `; 
-            }
+            newMonsterCard.innerHTML = `
+                <h2 class="monster-name">${monster.name}</h2>
+                <div class="monster-info">
+                    <p><strong>Species:</strong> ${monster.name}</p>
+                    <p><strong>Class:</strong> ${monsterClass}</p>
+                    <p><strong>Elements:</strong> ${monster.elements}</p>
+                    <p><strong>Islands:</strong> ${monster.island}</p>
+                    <p><strong>Likes:</strong> ${monster.likes}</p>
+                    <img src='${monstImg}', alt=${monster.name}>
+                </div>
+            `; 
             // <img src=${monster.image}, alt=${monster.name}>
             monsterCardsContainer.appendChild(newMonsterCard);
         });
