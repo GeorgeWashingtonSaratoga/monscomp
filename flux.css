@@ -1,5 +1,9 @@
+@font-face {
+    font-family: HogBold;
+    src: url(HOGB.ttf);
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: HogBold, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -41,6 +45,9 @@ img {
 filter {
     margin-bottom: 20px;
 }
+select {
+    font-family: HogBold, Arial, sans-serif;
+}
 .form-section {
     margin-bottom: 20px;
 }
@@ -78,7 +85,7 @@ a {
     text-align: left;
     color: #45a049 
 }
-div.TOC {
+.TOC {
     border: 1px solid #ccc;
     text-align: center;
     color: #45a049;
