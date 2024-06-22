@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>My Singing Monsters Flex Monster Compendium</h1>
+        <h1>My Singing Monsters Monster Compendium: Flex Tome</h1>
 
         <a href = "index.html">Index Page</a>
         
@@ -80,12 +80,22 @@
             <option value="???">Theoretical Island</option>
         </select>
 
+        <br>
+
+        <label for="rarityFilter">Rarity:</label>
+        <select id="rarityFilter">
+            <option value="Common">Common</option>
+            <option value="Rare">Rare</option>
+            <option value="Epic">Epic</option>
+        </select>
+
         <div id="monster-cards-container"></div>
     </div>
         <div id="no-results-message" style="display: none;">No monsters match the search criteria.</div>
     </div>
 
-    <script src="monsters.js"></script>
+    <script src="flexMonsters.js"></script>
     <script src="flux.js"></script>
+    <script src="uncMonsters.js"></script>
 </body>
 </html>

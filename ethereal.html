@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>My Singing Monsters Ethereal Monster Compendium</h1>
+        <h1>My Singing Monsters Monster Compendium: Ethereal Tome</h1>
 
         <a href = "index.html">Index Page</a>
 
@@ -53,6 +53,16 @@
             <option value="Composer">Composer Island</option>
         </select>
 
+        <br>
+
+        <label for="rarityFilter">Rarity:</label>
+        <select id="rarityFilter">
+            <option value="Common">Common</option>
+            <option value="Rare">Rare</option>
+            <option value="Epic">Epic</option>
+        </select>
+
+
         <div id="monster-cards-container"></div>
     </div>
         <div id="no-results-message" style="display: none;">No monsters match the search criteria.</div>
@@ -60,5 +70,6 @@
 
     <script src="ethMonsters.js"></script>
     <script src="ethereal.js"></script>
+    <script src="uncMonsters.js"></script>
 </body>
 </html>

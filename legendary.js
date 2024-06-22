@@ -18,8 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
         filteredMonsters = monsters.filter(monster => {
             const cardElements = monster.elements.split(', ');
             const cardIslands = monster.island.split(', ');
-            console.log(cardIslands);
-            console.log(islandFilter.value);
 
             const elementMatch = selectedElements.every(element => cardElements.includes(element));
             const isIslandMatch = islandFilter.value == "Any" || cardIslands.includes(islandFilter.value);

@@ -8,12 +8,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>My Singing Monsters Monster Compendium: Keybovore Tome</h1>
+        <h1>My Singing Monsters Monster Compendium: Flex Tome</h1>
 
         <a href = "index.html">Index Page</a>
-
+        
         <div class="filter">
             <label>Filter by Element:</label><br>
+            <label><input type="checkbox" class="element-filter" value="Plant"> Plant</label>
+            <label><input type="checkbox" class="element-filter" value="Cold"> Cold</label>
+            <label><input type="checkbox" class="element-filter" value="Air"> Air</label>
+            <label><input type="checkbox" class="element-filter" value="Water"> Water</label>
+            <label><input type="checkbox" class="element-filter" value="Earth"> Earth</label>
+            <label><input type="checkbox" class="element-filter" value="Fire"> Fire</label>
+            <label><input type="checkbox" class="element-filter" value="Light"> Light</label>
+            <label><input type="checkbox" class="element-filter" value="Psychic"> Psychic</label>
+            <label><input type="checkbox" class="element-filter" value="Faerie"> Faerie</label>
+            <label><input type="checkbox" class="element-filter" value="Bone"> Bone</label>
+            <label><input type="checkbox" class="element-filter" value="Plasma"> Plasma</label>
+            <label><input type="checkbox" class="element-filter" value="Shadow"> Shadow</label>
+            <label><input type="checkbox" class="element-filter" value="Mech"> Mech</label>
+            <label><input type="checkbox" class="element-filter" value="Crystal"> Crystal</label>
+            <label><input type="checkbox" class="element-filter" value="Poison"> Poison</label>
+            <label><input type="checkbox" class="element-filter" value="Celestial"> Celestial</label>
+            <label><input type="checkbox" class="element-filter" value="Supernatural"> Supernatural</label>
+            <label><input type="checkbox" class="element-filter" value="Dipster"> Dipster</label>
+            <label><input type="checkbox" class="element-filter" value="Legendary"> Legendary</label>
+            <label><input type="checkbox" class="element-filter" value="Mythical"> Mythical</label>
+            <label><input type="checkbox" class="element-filter" value="Dreamythical"> Dreamythical</label>
             <label><input type="checkbox" class="element-filter" value="Spooktacle"> Spooktacle</label>
             <label><input type="checkbox" class="element-filter" value="Festival of Yay"> Festival of Yay</label>
             <label><input type="checkbox" class="element-filter" value="Season of Love"> Season of Love</label>
@@ -30,6 +51,33 @@
             <label><input type="checkbox" class="element-filter" value="SkyPainting"> SkyPainting</label>
             <label><input type="checkbox" class="element-filter" value="MindBoggle"> MindBoggle</label>
         </div>
+        
+        <label for="num-elements-filter">Filter by Number of Elements:</label>
+        <select id="num-elements-filter">
+            <option value="">Any</option>
+            <option value="=">Equal to</option>
+            <option value="<">Less than</option>
+            <option value=">">Greater than</option>
+        </select>
+       
+        <select id="num-elements-value">
+            <option value="1">Single</option>
+            <option value="2">Double</option>
+            <option value="3">Triple</option>
+            <option value="4">Quad</option>
+            <option value="5">Quint</option>
+            <option value="6">Sext</option>
+            <option value="7">Sept</option>
+            <option value="8">Oct</option>
+            <option value="9">Nov</option>
+            <option value="10">Deca</option>
+        </select>
+
+        <br>
+
+        <div class="filter">
+            <label><input type="checkbox" id="theory-filter"> Include Theoretical Monsters?</label>
+        </div>
 
         <br>
 
@@ -44,7 +92,8 @@
             <option value="Shugabush">Shugabush Island</option>
             <option value="Colossingum">The Colossingum</option>
             <option value="Gold">Gold Island</option>
-            <option value="Ethereal">Ethereal Island</option> 
+            <option value="Ethereal">Ethereal Island</option>
+            <option value="Workshop">Ethereal Workshop</option>
             <option value="Haven">Fire Haven</option>
             <option value="Oasis">Fire Oasis</option>
             <option value="Light">Light Island</option>
@@ -52,10 +101,17 @@
             <option value="Faerie">Faerie Island</option>
             <option value="Bone">Bone Island</option>
             <option value="Sanctum">Magical Sanctum</option>
+            <option value="Nexus">Magical Nexus</option>
             <option value="Shanty">Seasonal Shanty</option>
             <option value="Amber">Amber Island</option>
             <option value="Wublin">Wublin Island</option>
+            <option value="Celestial">Celestial Island</option>
+            <option value="Tribal">Tribal Island</option>
+            <option value="Composer">Composer Island</option>
+            <option value="???">Theoretical Island</option>
         </select>
+
+        <br>
 
         <label for="rarityFilter">Rarity:</label>
         <select id="rarityFilter">
@@ -64,14 +120,13 @@
             <option value="Epic">Epic</option>
         </select>
 
-
         <div id="monster-cards-container"></div>
     </div>
         <div id="no-results-message" style="display: none;">No monsters match the search criteria.</div>
     </div>
 
-    <script src="seaMonsters.js"></script>
-    <script src="seasonal.js"></script>
+    <script src="allMonsters.js"></script>
+    <script src="all.js"></script>
     <script src="uncMonsters.js"></script>
 </body>
 </html>
