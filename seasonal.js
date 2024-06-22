@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const noResultsMessage = document.getElementById('no-results-message');
     const islandFilter = document.getElementById('islandFilter');
 
+    function removeFunction(inputString) {
+        return inputString.replace(/[^a-zA-Z0-9?]/g, '');
+    }
+
     function applyFilters() {
         const selectedElements = Array.from(elementFilters)
             .filter(element => element.checked)
@@ -43,6 +47,11 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 monsterClass = "Aux. Seasonal";
             }
+            if (monster.name.includes("???")) {
+                monstImg = String("./monstImage/%3F%3F%3F.png")
+            } else {
+                monstImg = String("./monstImage/" + removeFunction(monster.name) + ".png")
+            }
             const newMonsterCard = document.createElement('div');
             newMonsterCard.classList.add('monster-card');
             newMonsterCard.setAttribute('data-elements', monster.elements);
@@ -56,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p><strong>Elements:</strong> ${monster.elements}</p>
                     <p><strong>Islands:</strong> ${monster.island}</p>
                     <p><strong>Likes:</strong> ${monster.likes}</p>
+                    <img src='${monstImg}', alt=${monster.name}>
                 </div>
             `; 
             // <img src=${monster.image}, alt=${monster.name}>

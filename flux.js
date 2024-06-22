@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const theoryFilter = document.getElementById('theory-filter');
     const islandFilter = document.getElementById('islandFilter');
 
+    function removeFunction(inputString) {
+        return inputString.replace(/[^a-zA-Z0-9?]/g, '');
+    }
+
     function applyFilters() {
         const selectedElements = Array.from(elementFilters)
             .filter(element => element.checked)
@@ -95,7 +99,11 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 monsterClass = "Natural";
             }
-            monstImg = String("./monstImage/" + monster.name.toLowerCase() + ".png")
+            if (monster.name.includes("???")) {
+                monstImg = String("./monstImage/%3F%3F%3F.png")
+            } else {
+                monstImg = String("./monstImage/" + removeFunction(monster.name) + ".png")
+            }
             const newMonsterCard = document.createElement('div');
             newMonsterCard.classList.add('monster-card');
             newMonsterCard.setAttribute('data-elements', monster.elements);

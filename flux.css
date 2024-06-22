@@ -29,10 +29,11 @@ h1 {
     font-size: 24px;
     margin-bottom: 10px;
 }
-.monster-image {
+img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    object-fit: scale-down;
 }
 .monster-info {
     font-size: 16px;
@@ -77,7 +78,7 @@ a {
     text-align: left;
     color: #45a049 
 }
-.TOC {
+div.TOC {
     border: 1px solid #ccc;
     text-align: center;
     color: #45a049;
