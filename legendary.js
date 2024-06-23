@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 elfilOutput.textContent += (", " + selectedElements[i]);
             }
         }
-        
+
         let filteredMonsters = [];
 
         filteredMonsters = monsters.filter(monster => {
@@ -41,6 +41,10 @@ document.addEventListener("DOMContentLoaded", function() {
             noResultsMessage.style.display = 'none';
         } else {
             monsterCardsContainer.innerHTML = '';
+            noResultsMessage.style.display = 'block';
+        }
+
+        if (monsterCardsContainer.innerHTML == '') {
             noResultsMessage.style.display = 'block';
         }
     }

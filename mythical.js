@@ -65,6 +65,10 @@ document.addEventListener("DOMContentLoaded", function() {
             monsterCardsContainer.innerHTML = '';
             noResultsMessage.style.display = 'block';
         }
+
+        if (monsterCardsContainer.innerHTML == '') {
+            noResultsMessage.style.display = 'block';
+        }
     }
 
     function displayMonsterCards(monsters) {

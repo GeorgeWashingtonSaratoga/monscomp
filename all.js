@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let filteredMonsters = [];
 
+
         if (theoryFilter.checked) {
             filteredMonsters = monsters.concat(theoryMonsters).filter(monster => {
                 const cardElements = monster.elements.split(', ');
@@ -92,6 +93,10 @@ document.addEventListener("DOMContentLoaded", function() {
             noResultsMessage.style.display = 'none';
         } else {
             monsterCardsContainer.innerHTML = '';
+            noResultsMessage.style.display = 'block';
+        }
+
+        if (monsterCardsContainer.innerHTML == '') {
             noResultsMessage.style.display = 'block';
         }
     }
@@ -193,12 +198,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
 
-            const newMonsterCard = document.createElement('div');
-            newMonsterCard.classList.add('monster-card');
-            newMonsterCard.setAttribute('data-elements', monster.elements);
-            newMonsterCard.setAttribute('data-num-elements', monster.elements.split(',').length);
+            var monstIsles = monsterIsland.split(", ");
 
-            if ((rarityFilter.value == "Rare" && rareList.includes(monster.name)) || (rarityFilter.value == "Epic" && epicList.includes(monster.name)) || rarityFilter.value == "Common"){ 
+            if (((rarityFilter.value == "Rare" && rareList.includes(monster.name)) || (rarityFilter.value == "Epic" && epicList.includes(monster.name)) || rarityFilter.value == "Common") && (monstIsles.includes(islandFilter.value) || islandFilter.value == "Any")){
+                
+                const newMonsterCard = document.createElement('div');
+                newMonsterCard.classList.add('monster-card');
+                newMonsterCard.setAttribute('data-elements', monster.elements);
+                newMonsterCard.setAttribute('data-num-elements', monster.elements.split(',').length);
+
                 if (monsterSubClass != "") {
                     newMonsterCard.innerHTML = `
                     <h2 class="monster-name">${monsterName}</h2>
@@ -252,8 +260,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 monsterCardsContainer.appendChild(newMonsterCard);
             }
-            
-            // <img src=${monster.image}, alt=${monster.name}>
            
         });
     }

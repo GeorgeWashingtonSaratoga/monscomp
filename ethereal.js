@@ -65,6 +65,10 @@ document.addEventListener("DOMContentLoaded", function() {
             monsterCardsContainer.innerHTML = '';
             noResultsMessage.style.display = 'block';
         }
+
+        if (monsterCardsContainer.innerHTML == '') {
+            noResultsMessage.style.display = 'block';
+        }
     }
 
     function displayMonsterCards(monsters) {
@@ -101,7 +105,10 @@ document.addEventListener("DOMContentLoaded", function() {
             newMonsterCard.classList.add('monster-card');
             newMonsterCard.setAttribute('data-elements', monster.elements);
             newMonsterCard.setAttribute('data-num-elements', monster.elements.split(',').length); // Count number of elements
-            if ((rarityFilter.value == "Rare" && rareList.includes(monster.name)) || (rarityFilter.value == "Epic" && epicList.includes(monster.name)) || rarityFilter.value == "Common"){
+
+            var monstIsles = monsterIsland.split(", ");
+
+            if (((rarityFilter.value == "Rare" && rareList.includes(monster.name)) || (rarityFilter.value == "Epic" && epicList.includes(monster.name)) || rarityFilter.value == "Common") && (monstIsles.includes(islandFilter.value) || islandFilter.value == "Any")){
                 newMonsterCard.innerHTML = `
                     <h2 class="monster-name">${monsterName}</h2>
                     <div class="monster-info">
