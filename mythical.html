@@ -15,9 +15,21 @@
 
         <div class="filter">
             <label>Filter by Element:</label><br>
-            <label><input type="checkbox" class="element-filter" value="Mythical"> Mythical</label>
-            <label><input type="checkbox" class="element-filter" value="Dreamythical"> Dreamythical</label>
+            <label><input type="checkbox" class="element-filter" value="Mythical" id="Mythical"> </label>
+            <label for="Mythical">
+                <img src="./sigil/Mythical - Mythical.png" id = "checkIMg"/>
+              </label>
+            <label><input type="checkbox" class="element-filter" value="Dreamythical" id="Dream"> </label>
+            <label for="Dream">
+                <img src="./sigil/Mythical - Dream.png" id = "checkIMg"/>
+              </label>
         </div>
+
+        <br>
+
+        <label id = "elfilOutput"></label>
+
+        <br>
         
         <label for="num-elements-filter">Filter by Number of Elements:</label>
         <select id="num-elements-filter">
@@ -26,6 +38,8 @@
             <option value="<">Less than</option>
             <option value=">">Greater than</option>
         </select>
+
+        <br>
        
         <select id="num-elements-value">
             <option value="1">Single</option>
@@ -56,6 +70,7 @@
             <option value="Epic">Epic</option>
         </select>
 
+        <br>
 
         <div id="monster-cards-container"></div>
     </div>

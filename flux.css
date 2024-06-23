@@ -63,7 +63,7 @@ select {
     box-sizing: border-box;
 }
 .form-section button {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -85,11 +85,45 @@ a {
     text-align: left;
     color: #45a049 
 }
-.TOC {
+#TOC {
     border: 1px solid #ccc;
     text-align: center;
-    color: #45a049;
+    color: #144717;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     border-radius: 8px;
+}
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    cursor: pointer;
+}
+input[type="checkbox"]:after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f111";
+    font-size: 18px;
+    color: #f4f4f4;
+}
+input[type="checkbox"]:checked:after {
+    font-weight: 900;
+    content: "\f058";
+    color: #f4f4f4;
+}
+#checkIMg {
+    max-width: 10%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: scale-down;
+}
+#checkIMg + input[type="checkbox"]:checked:after {
+    filter: saturate(50%);
+    font-weight: 900;
+    content: "\f058";
+    color: #f4f4f4;
 }

@@ -15,8 +15,15 @@
 
         <div class="filter">
             <label>Filter by Element:</label><br>
-            <label><input type="checkbox" class="element-filter" value="Legendary"> Legendary</label>
+            <label><input type="checkbox" class="element-filter" value="Legendary" id="Legendary"> </label>
+            <label for="Legendary">
+                <img src="./sigil/Legendary.png" id = "checkIMg"/>
+              </label>
         </div>
+
+        <br>
+
+        <label id = "elfilOutput"></label>
 
         <br>
 
@@ -31,6 +38,8 @@
             <option value="Shugabush">Shugabush Island</option> 
             <option value="Gold">Gold Island</option>\
         </select>
+
+        <br>
 
         <div id="monster-cards-container"></div>
     </div>

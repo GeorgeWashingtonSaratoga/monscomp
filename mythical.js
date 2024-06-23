@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const elementFilters = document.querySelectorAll('.element-filter');
+    const elfilOutput = document.getElementById('elfilOutput');
     const numElementsFilter = document.getElementById('num-elements-filter');
     const numElementsValue = document.getElementById('num-elements-value');
     const monsterCardsContainer = document.getElementById('monster-cards-container');
@@ -17,6 +18,16 @@ document.addEventListener("DOMContentLoaded", function() {
             .map(element => element.value);
         const selectedNumElements = numElementsValue.value;
         const selectedNumFilter = numElementsFilter.value;
+
+        elfilOutput.textContent = ""
+
+        for (let i = 0; i < Array.from(elementFilters).length; i++) {
+            if (i == 0 && selectedElements[i] != undefined) {
+                elfilOutput.textContent += selectedElements[0];
+            } else if (selectedElements[i] != undefined){
+                elfilOutput.textContent += (", " + selectedElements[i]);
+            }
+        }
 
         let filteredMonsters = [];
 

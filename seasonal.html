@@ -15,22 +15,71 @@
 
         <div class="filter">
             <label>Filter by Element:</label><br>
-            <label><input type="checkbox" class="element-filter" value="Spooktacle"> Spooktacle</label>
-            <label><input type="checkbox" class="element-filter" value="Festival of Yay"> Festival of Yay</label>
-            <label><input type="checkbox" class="element-filter" value="Season of Love"> Season of Love</label>
-            <label><input type="checkbox" class="element-filter" value="Eggs-Travaganza"> Eggs-Travaganza</label>
-            <label><input type="checkbox" class="element-filter" value="SummerSong"> SummerSong</label>
-            <label><input type="checkbox" class="element-filter" value="Feast-Ember"> Feast-Ember</label>
-            <label><input type="checkbox" class="element-filter" value="Anniversary Month"> Anniversary Month</label>
-            <label><input type="checkbox" class="element-filter" value="Beat Hereafter"> Beat Hereafter</label>
-            <label><input type="checkbox" class="element-filter" value="Crescendo Moon"> Crescendo Moon</label>
-            <label><input type="checkbox" class="element-filter" value="Cloverspell"> Cloverspell</label>
-            <label><input type="checkbox" class="element-filter" value="Echoes of Eco"> Echoes of Eco</label>
-            <label><input type="checkbox" class="element-filter" value="Perplexplore"> Perplexplore</label>
-            <label><input type="checkbox" class="element-filter" value="Life-Formula"> Life-Formula</label>
-            <label><input type="checkbox" class="element-filter" value="SkyPainting"> SkyPainting</label>
-            <label><input type="checkbox" class="element-filter" value="MindBoggle"> MindBoggle</label>
+            <label><input type="checkbox" class="element-filter" value="Spooktacle" id="Halloween"> </label>
+            <label for="Halloween">
+                <img src="./sigil/Seasonal (Core) - Spooktacle.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="Festival of Yay" id="Christmas"> </label>
+            <label for="Christmas">
+                <img src="./sigil/Seasonal (Core) - Festival of Yay.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="Season of Love" id="Valentine"> </label>
+            <label for="Valentine">
+                <img src="./sigil/Seasonal (Core) - Season of Love.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="Eggs-Travaganza" id="Easter"> </label>
+            <label for="Easter">
+                <img src="./sigil/Seasonal (Core) - Eggs-Travaganza.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="SummerSong" id="Summer"> </label>
+            <label for="Summer">
+                <img src="./sigil/Seasonal (Core) - SummerSong.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="Feast-Ember" id="Thank"> </label>
+            <label for="Thank">
+                <img src="./sigil/Seasonal (Aux.) - Feast-Ember.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="Anniversary Month" id="Anniv"> </label>
+            <label for="Anniv">
+                <img src="./sigil/Seasonal (Aux.) - Anniversary Month.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="Beat Hereafter" id="Muerto"> </label>
+            <label for="Muerto">
+                <img src="./sigil/Seasonal (Aux.) - Beat Hereafter.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="Crescendo Moon" id="Lunar"> </label>
+            <label for="Lunar">
+                <img src="./sigil/Seasonal (Aux.) - Crescendo Moon.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="Cloverspell" id="Patrick"> </label>
+            <label for="Patrick">
+                <img src="./sigil/Seasonal (Aux.) - Cloverspell.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="Echoes of Eco" id="Earth"> </label>
+            <label for="Earth">
+                <img src="./sigil/Seasonal (Aux.) - Echoes of Eco.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="Perplexplore" id="Lore"> </label>
+            <label for="Lore">
+                <img src="./sigil/Seasonal (Aux.) - Perplexplore.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="Life-Formula" id="BBB"> </label>
+            <label for="BBB">
+                <img src="./sigil/Seasonal (Aux.) - Life-Formula.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="SkyPainting" id="Pride"> </label>
+            <label for="Pride">
+                <img src="./sigil/Seasonal (Aux.) - SkyPainting.png" id = "checkIMg"/>
+            </label>
+            <label><input type="checkbox" class="element-filter" value="MindBoggle" id="School"> </label>
+            <label for="School">
+                <img src="./sigil/Seasonal (Aux.) - MindBoggle.png" id = "checkIMg"/>
+            </label>
         </div>
+
+        <br>
+
+        <label id = "elfilOutput"></label>
 
         <br>
 
@@ -67,6 +116,7 @@
             <option value="Epic">Epic</option>
         </select>
 
+        <br>
 
         <div id="monster-cards-container"></div>
     </div>

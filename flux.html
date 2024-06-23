@@ -15,17 +15,53 @@
         
         <div class="filter">
             <label>Filter by Element:</label><br>
-            <label><input type="checkbox" class="element-filter" value="Plant"> Plant</label>
-            <label><input type="checkbox" class="element-filter" value="Cold"> Cold</label>
-            <label><input type="checkbox" class="element-filter" value="Air"> Air</label>
-            <label><input type="checkbox" class="element-filter" value="Water"> Water</label>
-            <label><input type="checkbox" class="element-filter" value="Earth"> Earth</label>
-            <label><input type="checkbox" class="element-filter" value="Fire"> Fire</label>
-            <label><input type="checkbox" class="element-filter" value="Light"> Light</label>
-            <label><input type="checkbox" class="element-filter" value="Psychic"> Psychic</label>
-            <label><input type="checkbox" class="element-filter" value="Faerie"> Faerie</label>
-            <label><input type="checkbox" class="element-filter" value="Bone"> Bone</label>
+            <label><input type="checkbox" class="element-filter" value="Plant" id="Plant"> </label>
+            <label for="Plant">
+                <img src="./sigil/Natural - Plant.png"  id = "checkIMg"/>
+              </label>
+            <label><input type="checkbox" class="element-filter" value="Cold" id="Cold"> </label>
+            <label for="Cold">
+                <img src="./sigil/Natural - Cold.png"  id = "checkIMg"/>
+              </label>
+            <label><input type="checkbox" class="element-filter" value="Air" id="Air"> </label>
+            <label for="Air">
+                <img src="./sigil/Natural - Air.png"  id = "checkIMg"/>
+              </label>
+            <label><input type="checkbox" class="element-filter" value="Water" id="Water"> </label>
+            <label for="Water">
+                <img src="./sigil/Natural - Water.png"  id = "checkIMg"/>
+              </label>
+            <label><input type="checkbox" class="element-filter" value="Earth" id="Earth"> </label>
+            <label for="Earth">
+                <img src="./sigil/Natural - Earth.png"  id = "checkIMg"/>
+              </label>
+            <label><input type="checkbox" class="element-filter" value="Fire" id="Fire"> </label>
+            <label for="Fire">
+                <img src="./sigil/Natural - Fire.png"  id = "checkIMg"/>
+              </label>
+            <label><input type="checkbox" class="element-filter" value="Light" id="Light"> </label>
+            <label for="Light">
+                <img src="./sigil/Magical - Light.png"  id = "checkIMg"/>
+              </label>
+            <label><input type="checkbox" class="element-filter" value="Psychic" id="Psychic"> </label>
+            <label for="Psychic">
+                <img src="./sigil/Magical - Psychic.png"  id = "checkIMg"/>
+              </label>
+            <label><input type="checkbox" class="element-filter" value="Faerie" id="Faerie"> </label>
+            <label for="Faerie">
+                <img src="./sigil/Magical - Faerie.png"  id = "checkIMg"/>
+              </label>
+            <label><input type="checkbox" class="element-filter" value="Bone" id="Bone"> </label>
+            <label for="Bone">
+                <img src="./sigil/Magical - Bone.png"  id = "checkIMg"/>
+              </label>
         </div>
+
+        <br>
+
+        <label id = "elfilOutput"></label>
+
+        <br>
         
         <label for="num-elements-filter">Filter by Number of Elements:</label>
         <select id="num-elements-filter">
@@ -34,6 +70,8 @@
             <option value="<">Less than</option>
             <option value=">">Greater than</option>
         </select>
+
+        <br>
        
         <select id="num-elements-value">
             <option value="1">Single</option>
@@ -89,6 +127,8 @@
             <option value="Rare">Rare</option>
             <option value="Epic">Epic</option>
         </select>
+
+        <br>
 
         <div id="monster-cards-container"></div>
     </div>

@@ -15,10 +15,23 @@
 
         <div class="filter">
             <label>Filter by Element:</label><br>
-            <label><input type="checkbox" class="element-filter" value="Celestial"> Celestial</label>
-            <label><input type="checkbox" class="element-filter" value="Supernatural"> Supernatural</label>
-            <label><input type="checkbox" class="element-filter" value="Dipster"> Dipster</label>
+            <label><input type="checkbox" class="element-filter" value="Celestial" id="Celestial"> </label>
+            <label for="Celestial">
+                <img src="./sigil/Celestial.png" id = "checkIMg"/>
+              </label>
+            <label><input type="checkbox" class="element-filter" value="Supernatural" id="Supernatural"> </label>
+            <label for="Supernatural">
+                <img src="./sigil/Supernatural - Electricity.png" id = "checkIMg"/>
+              </label>
+            <label><input type="checkbox" class="element-filter" value="Dipster" id="Dipster"> </label>
+            <label for="Dipster">
+                <img src="./sigil/Dipster.png" id = "checkIMg"/>
+              </label>
         </div>
+
+        <br>
+
+        <label id = "elfilOutput"></label>
 
         <br>
 
@@ -51,6 +64,7 @@
             <option value="Epic">Epic</option>
         </select>
 
+        <br>
 
         <div id="monster-cards-container"></div>
     </div>
