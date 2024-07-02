@@ -73,7 +73,7 @@ select {
 .form-section button:hover {
     background-color: #45a049;
 }
-.no-results-message {
+#no-results-message {
     border: 1px solid #ccc;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -86,12 +86,29 @@ a {
     color: #45a049 
 }
 #TOC {
-    border: 1px solid #ccc;
     text-align: center;
     color: #144717;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    border-radius: 8px;
+}
+#Map {
+    text-align: center;
+    color: #144717;
+    background-color: #fff;
+}
+#Bio {
+    text-align: center;
+    color: #144717;
+    background-color: #fff;
+}
+#Fam {
+    text-align: center;
+    color: #144717;
+    background-color: #fff;
+}
+#Lang {
+    text-align: center;
+    color: #144717;
+    background-color: #fff;
 }
 input[type="checkbox"] {
     -webkit-appearance: none;
@@ -126,4 +143,11 @@ input[type="checkbox"]:checked:after {
     font-weight: 900;
     content: "\f058";
     color: #f4f4f4;
+}
+#theory-filter {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(50%, 50%);
+    width: 100%;
 }

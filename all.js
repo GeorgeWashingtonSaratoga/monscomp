@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const numElementsValue = document.getElementById('num-elements-value');
     const monsterCardsContainer = document.getElementById('monster-cards-container');
     const noResultsMessage = document.getElementById('no-results-message');
-    const theoryFilter = document.getElementById('theory-filter');
     const islandFilter = document.getElementById('islandFilter');
     const rarityFilter = document.getElementById('rarityFilter');
 
@@ -32,60 +31,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let filteredMonsters = [];
 
+        filteredMonsters = monsters.filter(monster => {
+            const cardElements = monster.elements.split(', ');
+            const cardIslands = monster.island.split(', ');
+            const cardNumElements = cardElements.length;
 
-        if (theoryFilter.checked) {
-            filteredMonsters = monsters.concat(theoryMonsters).filter(monster => {
-                const cardElements = monster.elements.split(', ');
-                const cardIslands = monster.island.split(', ');
-                const cardNumElements = cardElements.length;
+            const elementMatch = selectedElements.every(element => cardElements.includes(element));
+            const isIslandMatch = islandFilter.value == "Any" || cardIslands.includes(islandFilter.value);
+            let numElementsMatch;
+            switch(selectedNumFilter) {
+                case '=':
+                    numElementsMatch = cardNumElements === parseInt(selectedNumElements);
+                    break;
+                case '<':
+                    numElementsMatch = cardNumElements < parseInt(selectedNumElements);
+                    break;
+                case '>':
+                    numElementsMatch = cardNumElements > parseInt(selectedNumElements);
+                    break;
+                default:
+                    numElementsMatch = true;
+                    break;
+            }
 
-                const elementMatch = selectedElements.every(element => cardElements.includes(element));
-                const isIslandMatch = islandFilter.value == "Any" || cardIslands.includes(islandFilter.value);
-                let numElementsMatch;
-                switch(selectedNumFilter) {
-                    case '=':
-                        numElementsMatch = cardNumElements === parseInt(selectedNumElements);
-                        break;
-                    case '<':
-                        numElementsMatch = cardNumElements < parseInt(selectedNumElements);
-                        break;
-                    case '>':
-                        numElementsMatch = cardNumElements > parseInt(selectedNumElements);
-                        break;
-                    default:
-                        numElementsMatch = true;
-                        break;
-                }
-
-                return elementMatch && numElementsMatch && isIslandMatch;
-            });
-        } else {
-            filteredMonsters = monsters.filter(monster => {
-                const cardElements = monster.elements.split(', ');
-                const cardIslands = monster.island.split(', ');
-                const cardNumElements = cardElements.length;
-
-                const elementMatch = selectedElements.every(element => cardElements.includes(element));
-                const isIslandMatch = islandFilter.value == "Any" || cardIslands.includes(islandFilter.value);
-                let numElementsMatch;
-                switch(selectedNumFilter) {
-                    case '=':
-                        numElementsMatch = cardNumElements === parseInt(selectedNumElements);
-                        break;
-                    case '<':
-                        numElementsMatch = cardNumElements < parseInt(selectedNumElements);
-                        break;
-                    case '>':
-                        numElementsMatch = cardNumElements > parseInt(selectedNumElements);
-                        break;
-                    default:
-                        numElementsMatch = true;
-                        break;
-                }
-
-                return elementMatch && numElementsMatch&& isIslandMatch;
-            });
-        }
+            return elementMatch && numElementsMatch&& isIslandMatch;
+        });
 
         // Display filtered monsters or no results message
         if (filteredMonsters.length > 0) {
@@ -267,7 +237,6 @@ document.addEventListener("DOMContentLoaded", function() {
     elementFilters.forEach(filter => filter.addEventListener('change', applyFilters));
     numElementsFilter.addEventListener('change', applyFilters);
     numElementsValue.addEventListener('change', applyFilters);
-    theoryFilter.addEventListener('change', applyFilters);
     islandFilter.addEventListener('change', applyFilters);
     rarityFilter.addEventListener('change', applyFilters);
 
