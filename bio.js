@@ -42,11 +42,13 @@ function generateBioPage(entry) {
         <link id = "icon", rel = "icon", href = "webIcon.png">
       </head>
       <body>
-        <h1>My Singing Monsters Compendium: Monster Biology</h1>
-        <h2>${entry.header}</h2>
-        <div id = "no-results-message">
-            ${paragraphHtml}
-        </div>
+        <div class = "container">
+            <h1>My Singing Monsters Compendium: Monster Biology</h1>
+            <h2>${entry.header}</h2>
+            <div id = "no-results-message">
+                ${paragraphHtml}
+            </div>
+        <div>
       </body>
     </html>
   `;
