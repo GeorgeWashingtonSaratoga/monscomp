@@ -19,7 +19,7 @@ function generateFamPage() {
                     <h2>${famEntries[family].name}</h2>
                     <p>Islands featured on: ${famEntries[family].islands}</p>
                     <p>Members: ${famEntries[family].content}</p>
-                    <img src = ${famImg}, alt = ${famEntries[family].name}>
+                    <img src = "${famImg}", alt = "${famEntries[family].name}">
                 </div>
         `;
         famDiv.appendChild(famCard);
