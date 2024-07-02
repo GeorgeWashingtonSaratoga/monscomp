@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Singing Monsters Monster Compendium: Map of the Monster World</title>
+    <link href = "flux.css", rel = "stylesheet">
+    <link id = "icon", rel = "icon", href = "webIcon.png">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #mapCanvas {
+            width: 80vw; /* 80% of viewport width */
+            height: calc(80vw * 9 / 16); /* Maintain 16:9 aspect ratio */
+            margin: auto; /* Center horizontally */
+            display: block;
+            background-color: #000000; /* Optional: background color */
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+
+        <h1>My Singing Monsters Monster Compendium: Map of the Monster World</h1>
+
+        <a href = "../index.html">Index Page</a>
+
+
+        <br>
+
+        <canvas id="mapCanvas"></canvas>
+
+        <br>
+        
+    </div>
+
+    <!-- Include map.js script -->
+    <script src="map.js"></script>
+</body>
+</html>

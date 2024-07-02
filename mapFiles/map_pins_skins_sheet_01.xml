@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:6205ddd9f60325b05cba0a46cae605ed:8e2c3bfae96e8e9a9be2ad86e880abed:aaf56ce4d5dfc45e83d17ee9b70cc239$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="gfx/menu/map/map_pins_skins_sheet_01.png" width="2048" height="2048" hires="true">
+    <sprite n="map_pin_island01_halloween" x="240" y="2" w="258" h="335" pX="0.5" pY="0.5" oX="12" oY="13" oW="300" oH="380"/>
+    <sprite n="map_pin_island01_mirror" x="2" y="1026" w="274" h="333" pX="0.5" pY="0.5" oX="14" oY="15" oW="300" oH="380"/>
+    <sprite n="map_pin_island01_skin01" x="1000" y="295" w="264" h="291" pX="0.5" pY="0.5" oX="32" oY="57" oW="300" oH="380"/>
+    <sprite n="map_pin_island02_christmas" x="1076" y="2" w="268" h="289" pX="0.5" pY="0.5" oX="32" oY="91" oW="300" oH="380"/>
+    <sprite n="map_pin_island02_mirror" x="512" y="1650" w="268" h="283" pX="0.5" pY="0.5" oX="32" oY="97" oW="300" oH="380"/>
+    <sprite n="map_pin_island02_skin01" x="304" y="1335" w="288" h="313" pX="0.5" pY="0.5" oX="7" oY="67" oW="300" oH="380"/>
+    <sprite n="map_pin_island03_mirror" x="492" y="339" w="268" h="330" pX="0.5" pY="0.5" oX="0" oY="18" oW="300" oH="380"/>
+    <sprite n="map_pin_island03_skin01" x="793" y="2" w="281" h="291" pX="0.5" pY="0.5" oX="13" oY="57" oW="300" oH="380"/>
+    <sprite n="map_pin_island03_valentines" x="240" y="339" w="250" h="335" pX="0.5" pY="0.5" oX="32" oY="13" oW="300" oH="380"/>
+    <sprite n="map_pin_island04_easter" x="2" y="347" w="236" h="338" pX="0.5" pY="0.5" oX="32" oY="10" oW="300" oH="380"/>
+    <sprite n="map_pin_island04_mirror" x="250" y="676" w="269" h="332" pX="0.5" pY="0.5" oX="31" oY="16" oW="300" oH="380"/>
+    <sprite n="map_pin_island04_skin01" x="241" y="1689" w="269" h="316" pX="0.5" pY="0.5" oX="18" oY="32" oW="300" oH="380"/>
+    <sprite n="map_pin_island05_mirror" x="762" y="333" w="236" h="295" pX="0.5" pY="0.5" oX="32" oY="53" oW="300" oH="380"/>
+    <sprite n="map_pin_island05_skin01" x="782" y="1606" w="230" h="236" pX="0.5" pY="0.5" oX="32" oY="118" oW="300" oH="380" r="y"/>
+    <sprite n="map_pin_island05_summersong" x="516" y="1010" w="271" h="310" pX="0.5" pY="0.5" oX="12" oY="38" oW="300" oH="380"/>
+    <sprite n="map_pin_island06_anniversary" x="789" y="976" w="242" h="271" pX="0.5" pY="0.5" oX="26" oY="77" oW="300" oH="380"/>
+    <sprite n="map_pin_island07_lifeformula" x="2" y="1689" w="237" h="322" pX="0.5" pY="0.5" oX="31" oY="26" oW="300" oH="380"/>
+    <sprite n="map_pin_island13_feastember" x="278" y="1010" w="236" h="323" pX="0.5" pY="0.5" oX="32" oY="25" oW="300" oH="380"/>
+    <sprite n="map_pin_island14_perplexore" x="521" y="671" w="236" h="305" pX="0.5" pY="0.5" oX="32" oY="43" oW="300" oH="380"/>
+    <sprite n="map_pin_island15_mindboggle" x="2" y="687" w="246" h="337" pX="0.5" pY="0.5" oX="32" oY="11" oW="300" oH="380"/>
+    <sprite n="map_pin_island16_cloverspell" x="759" y="671" w="283" h="303" pX="0.5" pY="0.5" oX="8" oY="45" oW="300" oH="380"/>
+    <sprite n="map_pin_island17_beathereafter" x="594" y="1322" w="237" h="282" pX="0.5" pY="0.5" oX="31" oY="70" oW="300" oH="380"/>
+    <sprite n="map_pin_island18_skypainting" x="2" y="1361" w="300" h="326" pX="0.5" pY="0.5" oX="0" oY="22" oW="300" oH="380"/>
+    <sprite n="map_pin_island19_crecendomoon" x="500" y="2" w="291" h="329" pX="0.5" pY="0.5" oX="5" oY="24" oW="300" oH="380"/>
+    <sprite n="map_pin_island22_echosofeco" x="2" y="2" w="236" h="343" pX="0.5" pY="0.5" oX="32" oY="18" oW="300" oH="380"/>
+</TextureAtlas>

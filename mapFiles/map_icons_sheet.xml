@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:8da892e185cc2905b029a643e0f6b7a1:49ce778144a10bbcbfd57b42c7f69810:3b70a368b6dbbd7143fd40be5dc3d417$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="gfx/menu/map/map_icons_sheet.png" width="256" height="512">
+    <sprite n="map_ascension_icon" x="2" y="53" w="71" h="65" oX="7" oY="5" oW="80" oH="80" r="y"/>
+    <sprite n="map_celestial_icon" x="84" y="2" w="73" h="70" oX="3" oY="6" oW="80" oH="80"/>
+    <sprite n="map_common_icon" x="75" y="74" w="68" h="49" oX="7" oY="16" oW="80" oH="80"/>
+    <sprite n="map_costume_icon" x="159" y="69" w="68" h="61" oX="10" oY="6" oW="80" oH="80" r="y"/>
+    <sprite n="map_epic_icon" x="2" y="120" w="66" h="49" oX="16" oY="7" oW="80" oH="80" r="y"/>
+    <sprite n="map_rare_icon" x="70" y="125" w="61" h="56" oX="12" oY="10" oW="80" oH="80" r="y"/>
+    <sprite n="map_seasonal_icon" x="159" y="2" w="69" h="65" oX="6" oY="8" oW="80" oH="80"/>
+    <sprite n="map_tag_baking" x="47" y="311" w="41" h="38" oX="7" oY="6" oW="52" oH="52" r="y"/>
+    <sprite n="map_tag_breed" x="143" y="265" w="42" h="39" oX="5" oY="6" oW="52" oH="52"/>
+    <sprite n="map_tag_castle" x="2" y="294" w="43" h="42" oX="5" oY="5" oW="52" oH="52" r="y"/>
+    <sprite n="map_tag_coin" x="183" y="132" w="48" h="38" oX="8" oY="2" oW="52" oH="52" r="y"/>
+    <sprite n="map_tag_collect_coin" x="50" y="225" w="45" h="40" oX="4" oY="6" oW="52" oH="52"/>
+    <sprite n="map_tag_collect_multi" x="183" y="172" w="47" h="43" oX="2" oY="3" oW="52" oH="52"/>
+    <sprite n="map_tag_collect_relic" x="53" y="183" w="46" h="40" oX="3" oY="5" oW="52" oH="52"/>
+    <sprite n="map_tag_collect_shard" x="97" y="264" w="44" h="39" oX="4" oY="6" oW="52" oH="52"/>
+    <sprite n="map_tag_evolve_both" x="182" y="217" w="46" h="46" oX="2" oY="2" oW="52" oH="52"/>
+    <sprite n="map_tag_evolving" x="230" y="2" w="24" h="43" oX="14" oY="4" oW="52" oH="52"/>
+    <sprite n="map_tag_expiration" x="49" y="267" w="43" h="42" oX="5" oY="5" oW="52" oH="52"/>
+    <sprite n="map_tag_icons_activities" x="101" y="220" w="45" h="42" oX="3" oY="5" oW="52" oH="52"/>
+    <sprite n="map_tag_icons_conundra" x="2" y="211" w="46" h="39" oX="3" oY="6" oW="52" oH="52"/>
+    <sprite n="map_tag_icons_fuzer" x="133" y="175" w="47" h="43" oX="2" oY="4" oW="52" oH="52"/>
+    <sprite n="map_tag_icons_orb" x="94" y="305" w="41" h="41" oX="5" oY="5" oW="52" oH="52"/>
+    <sprite n="map_tag_incubation" x="2" y="171" w="49" h="38" oX="1" oY="7" oW="52" oH="52"/>
+    <sprite n="map_tag_mine" x="133" y="132" w="48" h="41" oX="2" oY="6" oW="52" oH="52"/>
+    <sprite n="map_tag_sale" x="2" y="2" w="80" h="49" oX="0" oY="16" oW="80" oH="80"/>
+    <sprite n="map_tag_training" x="2" y="252" w="45" h="40" oX="4" oY="6" oW="52" oH="52"/>
+    <sprite n="map_tag_upgrade" x="2" y="338" w="40" h="39" oX="8" oY="5" oW="52" oH="52" r="y"/>
+</TextureAtlas>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:e8e875d9dfe755a88978810c5fa3f966:488e6fe21df2bf646ab50e6611b535a3:66e2d93464a12994f33979c4a35edd8a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="gfx/menu/map/map_locations_sheet_01.png" width="2048" height="2048" hires="true">
+    <sprite n="map_icon_sketch_island01" x="1784" y="714" w="262" h="354" oX="5" oY="20" oW="364" oH="300" r="y"/>
+    <sprite n="map_icon_sketch_island02" x="716" y="263" w="354" h="267" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island03" x="2" y="2" w="355" h="267" oX="4" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island04" x="1429" y="276" w="354" h="267" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island05" x="2" y="271" w="354" h="266" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island06" x="1786" y="2" w="259" h="354" oX="5" oY="20" oW="364" oH="300" r="y"/>
+    <sprite n="map_icon_sketch_island07" x="1785" y="358" w="261" h="354" oX="6" oY="20" oW="364" oH="300" r="y"/>
+    <sprite n="map_icon_sketch_island08" x="1072" y="531" w="354" h="267" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island09" x="358" y="271" w="354" h="266" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island10" x="1430" y="2" w="354" h="272" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island11" x="358" y="539" w="354" h="265" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island12" x="1073" y="261" w="354" h="268" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island13" x="714" y="532" w="354" h="266" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island14" x="2" y="539" w="354" h="266" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island15" x="1428" y="545" w="354" h="267" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island16" x="1426" y="814" w="354" h="263" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island17" x="2" y="807" w="354" h="264" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island18" x="1070" y="1066" w="354" h="263" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island19" x="1073" y="2" w="355" h="257" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island20" x="714" y="800" w="354" h="265" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island21" x="358" y="806" w="354" h="265" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island22" x="1070" y="800" w="354" h="264" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island23" x="714" y="1067" w="354" h="257" oX="5" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island24" x="359" y="2" w="355" h="267" oX="4" oY="20" oW="364" oH="300"/>
+    <sprite n="map_icon_sketch_island25" x="716" y="2" w="355" h="259" oX="3" oY="20" oW="364" oH="300"/>
+</TextureAtlas>
