@@ -203,7 +203,7 @@ const monsters = [
         likes: "PLACEHOLDER"
     },
     {
-        name: "???",
+        name: "Oogiddy",
         image: "",
         elements: "Shadow, Mech, Crystal, Poison",
         island: "Workshop",
