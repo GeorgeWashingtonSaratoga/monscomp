@@ -1,17 +1,21 @@
 const monsters = [
     {
         name: "Potbelly",
-        image: "test.png",
+        image: "potbelly.png",
         elements: "Plant",
         island: "Plant, Cold, Water, Earth, Haven, Light, Psychic, Shugabush, Tribal, Colossingum, Composer, Gold ",
-        likes: "T-Rox, Congle, Reedling, Phangler, Spytrap, Shugarock, Eerie Remains, Wild Bagpipe, Bloofi Tree"
+        likes: "T-Rox, Congle, Reedling, Phangler, Spytrap, Shugarock, Eerie Remains, Wild Bagpipe, Bloofi Tree",
+        rlikes: "PLACEHOLDER",
+        risland:"Plant, Cold, Water, Earth, Haven, Light, Psychic, Shugabush, Gold "
     },
     {
         name: "Mammott",
         image: "https://static.wikia.nocookie.net/mysingingmonsters/images/c/c6/Mammott.png/revision/latest?cb=20231101005110",
         elements: "Cold",
         island: "Plant, Cold, Air, Earth, Oasis, Light, Faerie, Shugabush, Tribal, Colossingum, Composer, Gold",
-        likes: "Fwog, Entbrat, Quibble, Quarrister, Pluckbill, Stogg, Meldablend, Bottomless Pit, Stritch Skin"
+        likes: "Fwog, Entbrat, Quibble, Quarrister, Pluckbill, Stogg, Meldablend, Bottomless Pit, Stritch Skin",
+        rlikes: "PLACEHOLDER",
+        risland: "Plant, Cold, Air, Earth, Oasis, Light, Faerie, Shugabush, Tribal, Colossingum, Composer, Gold"
     },
     {
         name: "Tweedle",
@@ -567,7 +571,7 @@ const monsters = [
         likes: "Kayna, Whaddle, Sneyser, Wynq, PU System, Freed Thing, Givutawai Tree"
     },
     {
-        name: "B'lowt",
+        name: "Blow't",
         elements: "Plant, Cold, Fire, Light",
         island: "Light, Nexus",
         likes: "Gob, Cozee Cabin, Barbloo Statue, Wubbox Stockpile"
@@ -627,10 +631,16 @@ const monsters = [
         likes: "Repatillo, Boskus, Wynq, Bowhead, Smunkit, Freed Thing, The Thunker"
     },
     {
-        name: "Tusksi",
+        name: "Tuskski",
         elements: "Cold, Air, Water, Earth, Fire",
         island: "Faerie, Amber",
         likes: "Krillby, Flowah, Candelavra, Incisaur, Star Rocks, Cold Globe, Swurlee Tree"
+    },
+    {
+        name: "Lyriccle",
+        elements: "Plant, Cold, Air, Water, Earth, Fire",
+        island: "???",
+        likes: "???"
     }
 ];
 
