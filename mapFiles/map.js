@@ -1,6 +1,10 @@
 // Variables to hold canvas and context
 let canvas, ctx;
 
+const updateCanvas = () => ({width: window.innerWidth, height: window.innerHeight}) 
+ 
+updateCanvas()
+
 // Array to hold loaded image objects
 const images = [
     { src: 'map_01.png', width: 2048, height: 1754, x: 0, y: 0 },
@@ -27,7 +31,7 @@ const xmlPinString = `<?xml version="1.0" encoding="UTF-8"?>
     <sprite n="map_pin_island06" x="994" y="2" w="236" h="271" oX="32" oY="77" oW="118" oH="135"/>
     <sprite n="map_pin_island07" x="2" y="1722" w="255" h="324" oX="29" oY="24" oW="127" oH="162"/>
     <sprite n="map_pin_island08" x="2" y="703" w="236" h="348" oX="32" oY="0" oW="118" oH="174"/>
-    <sprite n="map_pin_island09" x="731" y="976" w="268" h="281" oX="9" oY="80" oW="1340" oH="1400" r="y"/>
+    <sprite n="map_pin_island09" x="731" y="976" w="268" h="281" oX="9" oY="80" oW="134" oH="140" r="y"/>
     <sprite n="map_pin_island10" x="478" y="1362" w="248" h="304" oX="29" oY="44" oW="124" oH="152"/>
     <sprite n="map_pin_island11" x="782" y="1617" w="276" h="236" oX="32" oY="115" oW="138" oH="118" r="y"/>
     <sprite n="map_pin_island12" x="826" y="294" w="251" h="272" oX="32" oY="76" oW="125" oH="136"/>
@@ -85,9 +89,9 @@ const pinCoordinates = [
     { name: 'map_pin_island06', x: 1955, y: 1460 }, //gold
     { name: 'map_pin_island07', x: 474, y: 2460 }, //ethereal
     { name: 'map_pin_island08', x: 1463, y: 873 }, //shugabush
-    { name: 'map_pin_island09', x: 1955, y: 1460 }, //tribal
+    { name: 'map_pin_island09', x: 1955, y: 1460 }, //tribal //x and y are switched
     { name: 'map_pin_island10', x: 3370, y: 1999 }, //wublin
-    { name: 'map_pin_island11', x: 1955, y: 1460 }, //composer
+    { name: 'map_pin_island11', x: 1955, y: 1460 }, //compose //x and y are switched
     { name: 'map_pin_island12', x: 571, y: 1598 }, //celestial
     { name: 'map_pin_island13', x: 2746, y: 1370 }, //haven
     { name: 'map_pin_island14', x: 3075, y: 1075 }, //oasis
@@ -96,8 +100,8 @@ const pinCoordinates = [
     { name: 'map_pin_island17', x: 3397, y: 1308 }, //bone
     { name: 'map_pin_island18', x: 2078, y: 2736 }, //light
     { name: 'map_pin_island19', x: 997, y: 2708 }, //sanctum
-    { name: 'map_pin_island20', x: 2400, y: 2400 }, //colossingum
-    { name: 'map_pin_island21', x: 2500, y: 2500 }, //shanty
+    { name: 'map_pin_island20', x: 2400, y: 2400 }, //colossingum //x and y are switched
+    { name: 'map_pin_island21', x: 2500, y: 2500 }, //shanty //x and y are switched
     { name: 'map_pin_island22', x: 2287, y: 1700 }, //amber
     { name: 'map_pin_island23', x: 586, y: 628 }, //mythical
     { name: 'map_pin_island24', x: 393, y: 2805 }, //workshop
@@ -105,38 +109,38 @@ const pinCoordinates = [
 ];
 
 const locCoordinates = [
-    { name: 'map_icon_sketch_island01', x: 500, y: 500 },
-    { name: 'map_icon_sketch_island02', x: 600, y: 600 },
-    { name: 'map_icon_sketch_island03', x: 700, y: 700 },
-    { name: 'map_icon_sketch_island04', x: 800, y: 800 },
-    { name: 'map_icon_sketch_island05', x: 900, y: 900 },
-    { name: 'map_icon_sketch_island06', x: 1000, y: 1000 },
-    { name: 'map_icon_sketch_island07', x: 1100, y: 1100 },
-    { name: 'map_icon_sketch_island08', x: 1200, y: 1200 },
-    { name: 'map_icon_sketch_island09', x: 1300, y: 1300 },
-    { name: 'map_icon_sketch_island10', x: 1400, y: 1400 },
-    { name: 'map_icon_sketch_island11', x: 1500, y: 1500 },
-    { name: 'map_icon_sketch_island12', x: 1600, y: 1600 },
-    { name: 'map_icon_sketch_island13', x: 1700, y: 1700 },
-    { name: 'map_icon_sketch_island14', x: 1800, y: 1800 },
-    { name: 'map_icon_sketch_island15', x: 1900, y: 1900 },
-    { name: 'map_icon_sketch_island16', x: 2000, y: 2000 },
-    { name: 'map_icon_sketch_island17', x: 2100, y: 2100 },
-    { name: 'map_icon_sketch_island18', x: 2200, y: 2200 },
-    { name: 'map_icon_sketch_island19', x: 2300, y: 2300 },
+    { name: 'map_icon_sketch_island01', x: 2220, y: 1917 }, //x and y are switched
+    { name: 'map_icon_sketch_island02', x: 1974, y: 1114 },
+    { name: 'map_icon_sketch_island03', x: 1172, y: 1388 },
+    { name: 'map_icon_sketch_island04', x: 2611, y: 1890 },
+    { name: 'map_icon_sketch_island05', x: 1146, y: 1871 },
+    { name: 'map_icon_sketch_island06', x: 1460, y: 1952 }, //x and y are switched
+    { name: 'map_icon_sketch_island07', x: 2460, y: 469 }, ///x and y are switched
+    { name: 'map_icon_sketch_island08', x: 1460, y: 919 },
+    { name: 'map_icon_sketch_island09', x: 2100, y: 1460 },
+    { name: 'map_icon_sketch_island10', x: 3366, y: 2067 },
+    { name: 'map_icon_sketch_island11', x: 1800, y: 1460 },
+    { name: 'map_icon_sketch_island12', x: 568, y: 1681 },
+    { name: 'map_icon_sketch_island13', x: 2743, y: 1429 },
+    { name: 'map_icon_sketch_island14', x: 3073, y: 1141 },
+    { name: 'map_icon_sketch_island15', x: 2874, y: 2461 },
+    { name: 'map_icon_sketch_island16', x: 800, y: 1150 },
+    { name: 'map_icon_sketch_island17', x: 3394, y: 1388 },
+    { name: 'map_icon_sketch_island18', x: 2076, y: 2793 },
+    { name: 'map_icon_sketch_island19', x: 979, y: 2756 },
     { name: 'map_icon_sketch_island20', x: 2400, y: 2400 },
     { name: 'map_icon_sketch_island21', x: 2500, y: 2500 },
-    { name: 'map_icon_sketch_island22', x: 2600, y: 2600 },
-    { name: 'map_icon_sketch_island23', x: 2700, y: 2700 },
-    { name: 'map_icon_sketch_island24', x: 2800, y: 2800 },
-    { name: 'map_icon_sketch_island25', x: 2900, y: 2900 }
+    { name: 'map_icon_sketch_island22', x: 2285, y: 1751 },
+    { name: 'map_icon_sketch_island23', x: 581, y: 686 },
+    { name: 'map_icon_sketch_island24', x: 392, y: 2880 },
+    { name: 'map_icon_sketch_island25', x: 3316, y: 438 }
 ];
 
 
 // Array to hold pin data
 let pinData = [];
 
-// Array to hold pin data
+// Array to hold location data
 let locData = [];
 
 // Variables to track map dimensions and position
@@ -154,7 +158,7 @@ function initializeMap() {
 
     // Load pin image
     pinImage = new Image();
-    pinImage.onload = function() {
+    pinImage.onload = function () {
         // Calculate total width and height of the map
         totalWidth = images[1].x + images[1].width;
         totalHeight = images[2].y + images[2].height;
@@ -170,7 +174,7 @@ function initializeMap() {
         // Load map images and draw onto canvas
         images.forEach(image => {
             const img = new Image();
-            img.onload = function() {
+            img.onload = function () {
                 image.imgElement = img; // Store the image element in the image object
                 ctx.drawImage(img, initialX + image.x, initialY + image.y, image.width, image.height);
             };
@@ -178,11 +182,12 @@ function initializeMap() {
         });
 
         // Parse XML data and redraw map
-        parseXMLAndRedraw();
+        parseXMLAndRedrawPin();
     };
     pinImage.src = 'map_pins_sheet_01.png'; // Source of pin image
+
     locImage = new Image();
-    locImage.onload = function() {    
+    locImage.onload = function () {
         // Calculate total width and height of the map
         totalWidth = images[1].x + images[1].width;
         totalHeight = images[2].y + images[2].height;
@@ -198,7 +203,7 @@ function initializeMap() {
         // Load map images and draw onto canvas
         images.forEach(image => {
             const img = new Image();
-            img.onload = function() {
+            img.onload = function () {
                 image.imgElement = img; // Store the image element in the image object
                 ctx.drawImage(img, initialX + image.x, initialY + image.y, image.width, image.height);
             };
@@ -206,7 +211,7 @@ function initializeMap() {
         });
 
         // Parse XML data and redraw map
-        parseXMLAndRedraw();
+        parseXMLAndRedrawLoc();
     };
     locImage.src = 'map_locations_sheet_01.png'; // Source of pin image
 
@@ -225,12 +230,39 @@ function initializeMap() {
     document.addEventListener('keydown', handleKeyDown);
 }
 
+function parseXMLAndRedrawLoc() {
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(xmlLocString, 'text/xml');
+    const sprites = xmlDoc.getElementsByTagName('sprite');
+
+    for (let i = 0; i < sprites.length; i++) {
+        const sprite = sprites[i];
+        const name = sprite.getAttribute('n');
+        const x = parseFloat(sprite.getAttribute('oX')) || 0; // Adjusted to default 0 if not specified
+        const y = parseFloat(sprite.getAttribute('oY')) || 0; // Adjusted to default 0 if not specified
+        const width = parseFloat(sprite.getAttribute('oW')) || parseFloat(sprite.getAttribute('w'));
+        const height = parseFloat(sprite.getAttribute('oH')) || parseFloat(sprite.getAttribute('h'));
+        const oX = parseFloat(sprite.getAttribute('x'));
+        const oY = parseFloat(sprite.getAttribute('y'));
+        const originalWidth = parseFloat(sprite.getAttribute('w'));
+        const originalHeight = parseFloat(sprite.getAttribute('h'));
+        const r = sprite.getAttribute('r'); // Rotation attribute
+
+        // Store loc data
+        if (locData != []) {
+            locData.push({ name, x, y, width, height, oX, oY, originalWidth, originalHeight, r });
+        }
+    }
+
+    redrawMap(); // Redraw map after parsing XML
+}
+
 // Function to parse XML string and redraw the map with pins
-function parseXMLAndRedraw() {
+function parseXMLAndRedrawPin() {
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(xmlPinString, 'text/xml');
     const sprites = xmlDoc.getElementsByTagName('sprite');
-            
+
     for (let i = 0; i < sprites.length; i++) {
         const sprite = sprites[i];
         const name = sprite.getAttribute('n');
@@ -247,12 +279,10 @@ function parseXMLAndRedraw() {
         // Store pin data
         if (pinData != []) {
             pinData.push({ name, x, y, width, height, oX, oY, originalWidth, originalHeight, r });
-        } else {
+        } else if (locData != []) {
             locData.push({ name, x, y, width, height, oX, oY, originalWidth, originalHeight, r });
         }
     }
-
-    redrawMap(); // Redraw map after parsing XML
 }
 
 // Function to handle mouse down event
@@ -353,13 +383,17 @@ function redrawMap() {
 
         ctx.save();
 
-        // Translate to the sketch's position
-        ctx.translate(locX, locY);
-
         // Rotate if necessary (based on 'r' attribute in XML)
         if (sketch.r === 'y') {
-            ctx.rotate(-Math.PI / 2); // Rotate 90 degrees counterclockwise
+            let angle = (-1 * Math.PI) / 2; // This should be in radians
+            ctx.rotate(angle); // Rotate 90 degrees counterclockwise
+            ctx.translate(locY, locX);
+        } else {
+            // Translate to the sketch's position
+            ctx.translate(locX, locY);
         }
+
+        
 
         // Draw the sketch image
         ctx.drawImage(
@@ -370,7 +404,7 @@ function redrawMap() {
 
         ctx.restore();
     });
-    
+
     // Draw pins on top of the map
     pinData.forEach(pin => {
         // Find the pin's coordinates from pinCoordinates array
@@ -382,13 +416,17 @@ function redrawMap() {
 
         ctx.save();
 
-        // Translate to the pin's position
-        ctx.translate(pinX, pinY);
-
         // Rotate if necessary (based on 'r' attribute in XML)
         if (pin.r === 'y') {
-            ctx.rotate(-Math.PI / 2); // Rotate 90 degrees counterclockwise
+            let angle = (-1 * Math.PI) / 2; // This should be in radians
+            ctx.rotate(angle); // Rotate 90 degrees counterclockwise
+            ctx.translate(pinY, pinX);
+        } else {
+            ctx.translate(pinX, pinY);
         }
+        
+        // Translate to the pin's position
+        
 
         // Draw the pin image
         ctx.drawImage(
@@ -399,7 +437,7 @@ function redrawMap() {
 
         ctx.restore();
     });// Draw pins on top of the map
-    
+
 }
 
 // Call initializeMap function when DOM is loaded
