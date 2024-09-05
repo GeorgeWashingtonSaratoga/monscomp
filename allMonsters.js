@@ -1415,6 +1415,20 @@ const monsters = [
         elements: "MindBoggle",
         island: "Psychic, Shanty",
         likes: "PLACEHOLDER"
+    },
+    {
+        name: "Oogiddy",
+        image: "",
+        elements: "Shadow, Mech, Crystal, Poison",
+        island: "Workshop",
+        likes: "PLACEHOLDER"
+    },
+    {
+        name: "BeeMeebEth",
+        image: "",
+        elements: "Plasma, Shadow, Mech, Crystal, Poison",
+        island: "Workshop",
+        likes: "PLACEHOLDER"
     }
 ];
 

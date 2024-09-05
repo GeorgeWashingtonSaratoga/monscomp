@@ -161,7 +161,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (monster.name == "Wubbox" && rarityFilter.value == "Rare") {
 
                     monsterIsland = monsterIsland.replace(", Oasis", "");
-                    monsterIsland = monsterIsland.replace(", Wublin", "");
                 } else if (monster.name == "Wubbox" && rarityFilter.value == "Epic") {
 
                     monsterIsland = monsterIsland.replace(", Haven, Oasis, Ethereal, Wublin", "");
