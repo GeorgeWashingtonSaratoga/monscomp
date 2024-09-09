@@ -89,9 +89,9 @@ const pinCoordinates = [
     { name: 'map_pin_island06', x: 1955, y: 1460 }, //gold
     { name: 'map_pin_island07', x: 474, y: 2460 }, //ethereal
     { name: 'map_pin_island08', x: 1463, y: 873 }, //shugabush
-    { name: 'map_pin_island09', x: 1955, y: 1460 }, //tribal //x and y are switched
+    { name: 'map_pin_island09', x: 1590, y: 3098 }, //tribal //x and y are switched
     { name: 'map_pin_island10', x: 3370, y: 1999 }, //wublin
-    { name: 'map_pin_island11', x: 1955, y: 1460 }, //compose //x and y are switched
+    { name: 'map_pin_island11', x: 2320, y: 2650 }, //compose //x and y are switched
     { name: 'map_pin_island12', x: 571, y: 1598 }, //celestial
     { name: 'map_pin_island13', x: 2746, y: 1370 }, //haven
     { name: 'map_pin_island14', x: 3075, y: 1075 }, //oasis
@@ -100,8 +100,8 @@ const pinCoordinates = [
     { name: 'map_pin_island17', x: 3397, y: 1308 }, //bone
     { name: 'map_pin_island18', x: 2078, y: 2736 }, //light
     { name: 'map_pin_island19', x: 997, y: 2708 }, //sanctum
-    { name: 'map_pin_island20', x: 2400, y: 2400 }, //colossingum //x and y are switched
-    { name: 'map_pin_island21', x: 2500, y: 2500 }, //shanty //x and y are switched
+    { name: 'map_pin_island20', x: 1121, y: 1114 }, //colossingum //x and y are switched
+    { name: 'map_pin_island21', x: 2700, y: 2380 }, //shanty //x and y are switched
     { name: 'map_pin_island22', x: 2287, y: 1700 }, //amber
     { name: 'map_pin_island23', x: 586, y: 628 }, //mythical
     { name: 'map_pin_island24', x: 393, y: 2805 }, //workshop
@@ -109,31 +109,31 @@ const pinCoordinates = [
 ];
 
 const locCoordinates = [
-    { name: 'map_icon_sketch_island01', x: 2220, y: 1917 }, //x and y are switched
-    { name: 'map_icon_sketch_island02', x: 1974, y: 1114 },
-    { name: 'map_icon_sketch_island03', x: 1172, y: 1388 },
-    { name: 'map_icon_sketch_island04', x: 2611, y: 1890 },
-    { name: 'map_icon_sketch_island05', x: 1146, y: 1871 },
-    { name: 'map_icon_sketch_island06', x: 1460, y: 1952 }, //x and y are switched
-    { name: 'map_icon_sketch_island07', x: 2460, y: 469 }, ///x and y are switched
-    { name: 'map_icon_sketch_island08', x: 1460, y: 919 },
-    { name: 'map_icon_sketch_island09', x: 2100, y: 1460 },
-    { name: 'map_icon_sketch_island10', x: 3366, y: 2067 },
-    { name: 'map_icon_sketch_island11', x: 1800, y: 1460 },
-    { name: 'map_icon_sketch_island12', x: 568, y: 1681 },
-    { name: 'map_icon_sketch_island13', x: 2743, y: 1429 },
-    { name: 'map_icon_sketch_island14', x: 3073, y: 1141 },
-    { name: 'map_icon_sketch_island15', x: 2874, y: 2461 },
-    { name: 'map_icon_sketch_island16', x: 800, y: 1150 },
-    { name: 'map_icon_sketch_island17', x: 3394, y: 1388 },
-    { name: 'map_icon_sketch_island18', x: 2076, y: 2793 },
-    { name: 'map_icon_sketch_island19', x: 979, y: 2756 },
-    { name: 'map_icon_sketch_island20', x: 2400, y: 2400 },
-    { name: 'map_icon_sketch_island21', x: 2500, y: 2500 },
-    { name: 'map_icon_sketch_island22', x: 2285, y: 1751 },
-    { name: 'map_icon_sketch_island23', x: 581, y: 686 },
-    { name: 'map_icon_sketch_island24', x: 392, y: 2880 },
-    { name: 'map_icon_sketch_island25', x: 3316, y: 438 }
+    { name: 'map_icon_sketch_island01', x: 941, y: 1917 }, //plant //x and y are switched
+    { name: 'map_icon_sketch_island02', x: 1974, y: 1117 }, //cold
+    { name: 'map_icon_sketch_island03', x: 1172, y: 1391 }, //air
+    { name: 'map_icon_sketch_island04', x: 2611, y: 1893 }, //water
+    { name: 'map_icon_sketch_island05', x: 1146, y: 1874 }, //earth
+    { name: 'map_icon_sketch_island06', x: 1672, y: 1953 }, //gold //x and y are switched
+    { name: 'map_icon_sketch_island07', x: 696, y: 469 }, //ethereal ///x and y are switched
+    { name: 'map_icon_sketch_island08', x: 1460, y: 922 }, //shugabush
+    { name: 'map_icon_sketch_island09', x: 3084, y: 1714 }, //tribal
+    { name: 'map_icon_sketch_island10', x: 3366, y: 2069 }, //wublin
+    { name: 'map_icon_sketch_island11', x: 2648, y: 1019 }, //composer
+    { name: 'map_icon_sketch_island12', x: 568, y: 1684 }, //celestial
+    { name: 'map_icon_sketch_island13', x: 2743, y: 1432 }, //haven
+    { name: 'map_icon_sketch_island14', x: 3073, y: 1143 }, //oasis
+    { name: 'map_icon_sketch_island15', x: 2874, y: 2463 }, //psychic
+    { name: 'map_icon_sketch_island16', x: 800, y: 1154 }, //faerie
+    { name: 'map_icon_sketch_island17', x: 3394, y: 1391 }, //bone
+    { name: 'map_icon_sketch_island18', x: 2076, y: 2795 }, //light 
+    { name: 'map_icon_sketch_island19', x: 979, y: 2759 }, //sanctum
+    { name: 'map_icon_sketch_island20', x: 1098, y: 2178 }, //colossingum
+    { name: 'map_icon_sketch_island21', x: 2363, y: 583 }, //shanty
+    { name: 'map_icon_sketch_island22', x: 2285, y: 1754 }, //amber
+    { name: 'map_icon_sketch_island23', x: 581, y: 688 }, //mythical
+    { name: 'map_icon_sketch_island24', x: 392, y: 2883 }, //workshop
+    { name: 'map_icon_sketch_island25', x: 3316, y: 440 } //nexus
 ];
 
 
@@ -387,7 +387,10 @@ function redrawMap() {
         if (sketch.r === 'y') {
             let angle = (-1 * Math.PI) / 2; // This should be in radians
             ctx.rotate(angle); // Rotate 90 degrees counterclockwise
-            ctx.translate(locY, locX);
+            newlocY = (locY * -1) - 3348
+            newlocX = locX
+            ctx.translate(newlocY, newlocX);
+            console.log(sketch.name + ", X: " + newlocY + ", Y: " + newlocX )
         } else {
             // Translate to the sketch's position
             ctx.translate(locX, locY);
@@ -420,12 +423,12 @@ function redrawMap() {
         if (pin.r === 'y') {
             let angle = (-1 * Math.PI) / 2; // This should be in radians
             ctx.rotate(angle); // Rotate 90 degrees counterclockwise
-            ctx.translate(pinY, pinX);
+            newpinY = (pinY * -1) - 3348
+            newpinX = pinX
+            ctx.translate(newpinY, newpinX);
         } else {
             ctx.translate(pinX, pinY);
         }
-        
-        // Translate to the pin's position
         
 
         // Draw the pin image
