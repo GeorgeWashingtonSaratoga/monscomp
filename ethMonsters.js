@@ -98,7 +98,7 @@ const monsters = [
         likes: "PLACEHOLDER"
     },
     {
-        name: "Fungpray",
+        name: "FungPray",
         image: "",
         elements: "Crystal, Poison",
         island: "Ethereal, Colossingum",
