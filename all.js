@@ -75,14 +75,18 @@ document.addEventListener("DOMContentLoaded", function() {
         monsterCardsContainer.innerHTML = '';
         monsters.forEach(monster => {
             var monsterClass = "";
-            if (monster.elements.includes("Fire")) {
-                monsterClass = "Fire";
-            } else if (monster.elements.includes("Bone") || monster.elements.includes("Light") || monster.elements.includes("Psychic") || monster.elements.includes("Faerie")) {
+            if (monster.elements.includes("Bone") || monster.elements.includes("Light") || monster.elements.includes("Psychic") || monster.elements.includes("Faerie")) {
                 monsterClass = "Magical";
+            } else if (monster.elements.includes("Fire")) {
+                    monsterClass = "Fire";
             } else if (monster.elements.includes("Plant") || monster.elements.includes("Cold") || monster.elements.includes("Air") || monster.elements.includes("Water") || monster.elements.includes("Earth")) {
                 monsterClass = "Natural";
             } else if (monster.elements.includes("Plasma") || monster.elements.includes("Shadow") || monster.elements.includes("Mech") || monster.elements.includes("Crystal") || monster.elements.includes("Poison")) {
                 monsterClass = "Ethereal";
+            } else if (monster.elements.includes("Control")) {
+                monsterClass = "Paironormal";
+            } else if (monster.elements.includes("Titansoul")) {
+                monsterClass = "Titansoul";
             } else if (monster.elements.includes("Legendary")) {
                 monsterClass = "Legendary";
             } else if (monster.elements.includes("Mythical") || monster.elements.includes("Dreamythical")) {
@@ -160,10 +164,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 if (monster.name == "Wubbox" && rarityFilter.value == "Rare") {
 
-                    monsterIsland = monsterIsland.replace(", Oasis", "");
+                    monsterIsland = monsterIsland.replace(",", ",");
                 } else if (monster.name == "Wubbox" && rarityFilter.value == "Epic") {
 
-                    monsterIsland = monsterIsland.replace(", Haven, Oasis, Ethereal, Wublin", "");
+                    monsterIsland = monsterIsland.replace(", Ethereal, Wublin", "");
                 }
             }
 
@@ -176,19 +180,29 @@ document.addEventListener("DOMContentLoaded", function() {
                 newMonsterCard.setAttribute('data-elements', monster.elements);
                 newMonsterCard.setAttribute('data-num-elements', monster.elements.split(',').length);
 
-                if (monsterSubClass != "") {
+                if (monsterClass == "Paironormal"){
+                    if (rarityFilter.value == "Epic") {
+                        monstImgMajor = './epicMonstImage/' + monster.name + ' (Major).png';
+                        monstImgMinor = './epicMonstImage/' + monster.name + ' (Minor).png';
+                    } else if (rarityFilter.value == "Rare") {
+                        monstImgMajor = './rareMonstImage/' + monster.name + ' (Major).png';
+                        monstImgMinor = './rareMonstImage/' + monster.name + ' (Minor).png';
+                    } else {
+                        monstImgMajor = './monstImage/' + monster.name + ' (Major).png';
+                        monstImgMinor = './monstImage/' + monster.name + ' (Minor).png';
+                    }
                     newMonsterCard.innerHTML = `
                     <h2 class="monster-name">${monsterName}</h2>
                     <div class="monster-info">
                         <p><strong>Species:</strong> ${monster.name}</p>
                         <p><strong>Class:</strong> ${monsterClass}</p>
-                        <p><strong>Subclass:</strong> ${monsterSubClass}</p>
                         <p><strong>Elements:</strong> ${monster.elements}</p>
                         <p><strong>Islands:</strong> ${monsterIsland}</p>
                         <p><strong>Likes:</strong> ${monsterLikes}</p>
-                        <img src='${monstImg}', alt=${monster.name}>
+                        <img src='${monstImgMajor}', alt='${monster.name} (Major)'>
+                        <img src='${monstImgMinor}', alt='${monster.name} (Minor)'>
                     </div>
-                `; 
+                `;
                 } else if (monster.name == "Wubbox" && rarityFilter.value == "Epic"){
                     if (islandFilter.value == "Plant") {
                         monstImg = "./epicMonstImage/Epic Wubbox Plant.png";
@@ -200,9 +214,25 @@ document.addEventListener("DOMContentLoaded", function() {
                         monstImg = "./epicMonstImage/Epic Wubbox Water.png";
                     } else if (islandFilter.value == "Earth") {
                         monstImg = "./epicMonstImage/Epic Wubbox Earth.png";
+                    } else if (islandFilter.value == "Haven") {
+                        monstImg = "./epicMonstImage/Epic Wubbox Haven.png";
+                    } else if (islandFilter.value == "Oasis") {
+                        monstImg = "./epicMonstImage/Epic Wubbox Oasis.png";
                     } else {
                         monstImg = "./epicMonstImage/Epic Wubbox Gold.png";
                     }
+                    newMonsterCard.innerHTML = `
+                    <h2 class="monster-name">${monsterName}</h2>
+                    <div class="monster-info">
+                        <p><strong>Species:</strong> ${monster.name}</p>
+                        <p><strong>Class:</strong> ${monsterClass}</p>
+                        <p><strong>Elements:</strong> ${monster.elements}</p>
+                        <p><strong>Islands:</strong> ${monsterIsland}</p>
+                        <p><strong>Likes:</strong> ${monsterLikes}</p>
+                        <img src='${monstImg}', alt=${monster.name}>
+                    </div>
+                `; 
+                } else if (monsterSubClass == "") {
                     newMonsterCard.innerHTML = `
                     <h2 class="monster-name">${monsterName}</h2>
                     <div class="monster-info">
@@ -220,6 +250,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="monster-info">
                         <p><strong>Species:</strong> ${monster.name}</p>
                         <p><strong>Class:</strong> ${monsterClass}</p>
+                        <p><strong>Subclass:</strong> ${monsterSubClass}</p>
                         <p><strong>Elements:</strong> ${monster.elements}</p>
                         <p><strong>Islands:</strong> ${monsterIsland}</p>
                         <p><strong>Likes:</strong> ${monsterLikes}</p>

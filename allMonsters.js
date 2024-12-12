@@ -1429,6 +1429,20 @@ const monsters = [
         elements: "Plasma, Shadow, Mech, Crystal, Poison",
         island: "Workshop",
         likes: "PLACEHOLDER"
+    },
+    {
+        name: "Phosphoran Phlox",
+        image: "",
+        elements: "Titansoul",
+        island: "Light",
+        likes: "PLACEHOLDER"
+    },
+    {
+        name: "Hairionette",
+        image: "",
+        elements: "Control",
+        island: "Psychic",
+        likes: "PLACEHOLDER"
     }
 ];
 
