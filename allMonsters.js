@@ -287,7 +287,7 @@ const monsters = [
     {
         name: "Reedling",
         elements: "Plant, Air, Earth",
-        island: "Water, Earth, Tribal, Colossingum, Composer, Gold",
+        island: "Water, Earth, Haven, Tribal, Colossingum, Composer, Gold",
         likes: "Potbelly, Shrubb, Beeyoot Tree, Pipes of Cicado, Squeed Statue"
     },
     {
@@ -299,7 +299,7 @@ const monsters = [
     {
         name: "Congle",
         elements: "Cold, Air, Water",
-        island: "Cold, Air, Tribal, Colossingum, Composer, Gold",
+        island: "Cold, Air, Oasis, Tribal, Colossingum, Composer, Gold",
         likes: "Potbelly, T-Rox, Boskus, Fossil-osaurus, Guitree, Meldablend"
     },
     {
